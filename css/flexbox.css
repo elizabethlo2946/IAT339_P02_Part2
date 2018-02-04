@@ -1,0 +1,54 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*100% width*/
+.flex-grid {
+    display: flex;
+}
+/*each box*/
+.col {
+    background-color: #eee;
+    margin: 1rem 0;
+}
+
+/*For 1 strip across: likely main nav and footer*/
+.flex-grid .col {
+    flex: 1;
+}
+
+.flex-grid-container {
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding-left: 10%;
+    width: 90%;
+}
+.flex-grid-twos {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-grid-twos .col {
+/*    Under 50% to provide some white space between columns: is this the best way? Or maybe margin should be better*/
+    width: 49.5%;
+}
+
+/*For 3 columns*/
+.flex-grid-threes {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-grid-threes .col {
+/*    Under 33% to provide white space between columns*/
+    width: 32.5%;
+}
+
+/*For 4 columns*/
+.flex-grid-fours {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-grid-fours .col {
+/*    Under 25% to provide white space between columns*/
+    width: 24.5%;
+}
