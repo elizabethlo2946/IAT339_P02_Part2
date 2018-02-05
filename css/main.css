@@ -1,7 +1,21 @@
 /*
 COLORS
-BLUE: rgb(22, 143, 224);
-RED: rgb(226, 111, 118);
+
+FONT COLOR (BROWN):
+color: rgb(73,45,9);
+
+BLUE: 
+rgb(154, 171, 185);
+
+BLUE ON HOVER:
+rgb(25, 52, 70);
+
+CORAL: 
+rgb(226, 180, 154);
+
+CORAL ON HOVER:
+rgb(183, 164, 154);
+
 TAN: rgb(210,180,140);
 */
 
@@ -13,6 +27,7 @@ body {
 /*    font-family: 'Hind Siliguri', sans-serif;*/
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02rem;
+    color: rgb(73,45,9);
 }
 
 h2, h3, nav {
@@ -23,62 +38,60 @@ h2, h3, nav {
 /* Interactive elements */
 
 .button-submit {
-  margin: 0;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center;
+    margin: 0;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
 
-  color: white;
-  font-size: 1.3rem;
-  font-weight: normal;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.1rem;
+    color: white;
+    font-size: 1 rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
 
-  background-color: rgba(22, 143, 224, 0.6);
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-  box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.3);
-  box-shadow: none;
-  border-radius: 0.25em;
+
+    background-color: rgb(226, 180, 154);
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    box-shadow: none;
+    border-radius: 0.2rem;
 }
 .button-submit:active, .button-submit:hover, .button-submit:focus{
-  background-color: rgba(22, 143, 224, 1);
+    background-color: rgb(183, 164, 154);
 }
 
 .button-reset {
-  margin: 0;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center;
+    margin: 0;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
 
-  color: rgb(96,83,67);
-  font-size: 1.3rem;
-  font-weight: normal;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
 
-  background-color: rgba(210,180,140,1);
+/*  background-color: rgba(210,180,140,1);*/
+    background-color: rgb(226, 180, 154);
   -webkit-transition: background-color, color 0.3s ease-out;
   transition: background-color, color 0.3s ease-out;
-  box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.3);
   box-shadow: none;
-  border-radius: 0.25em;
+  border-radius: 0.2rem;
 }
 .button-reset:active, .button-reset:hover, .button-reset:focus{
-  color: rgba(210,180,140,1);
-  background-color: rgba(119,103,83,1);
+    background-color: rgb(183, 164, 154);
 }
 .input-text {
-  margin: 0;
-  padding: 0.5rem;
-  background-color: rgb(210,180,140);
-  text-transform: uppercase;
-  font-size: 1rem;
-  border-radius: 0.25em;
-  /* display: flex;
-  flex-wrap: wrap; */
+    margin: 0;
+    padding: 0.5rem;
+    background-color: rgb(226, 180, 154);
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    border-radius: 0.2rem;
 }
 .input-text-box {
   width: 80%;
@@ -103,7 +116,7 @@ h1 {
 h2 {
     margin: 3rem 0;
     color: white;
-    background-color: rgb(210,180,140);
+    background-color: rgb(154, 171, 185);
     box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.1);
     padding: 1.5rem;
     border-radius: 0.2rem;
@@ -125,10 +138,10 @@ section code {
 .h1-titles {
     margin: 0;
     padding: 0.5rem 0;
-    color: rgb(210,180,140);
+    color: rgb(154, 171, 185);
     text-transform: uppercase;
     font-size: 1.5rem;
-    border: 0.5rem solid rgb(210,180,140);
+    border: 0.5rem solid rgb(154, 171, 185);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -140,37 +153,44 @@ section code {
     display: flex;
     justify-content: center;
 
-    color: black;
+    color: rgb(154, 171, 185);
     font-size: 1.3rem;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-
-    background-color: rgba(22, 143, 224,0.2);
-    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.3);
+    
+    background-color: white;
+/*    background-color: rgba(22, 143, 224,0.2);*/
+/*    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.3);*/
     box-shadow: none;
-    border-radius: 0;
+/*    border-radius: 0;*/
 /*    border-bottom: 0.1rem solid rgb(22, 143, 224);*/
 }
 .h3-subtitles {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bolder;
     letter-spacing: 0.2rem;
+    
+    border-bottom: 0.1rem solid rgb(226, 180, 154);
 }
 .a-in-text {
     margin: 0;
-    padding:0;
+    padding: 0.1rem;
     font-size: 1rem;
-    text-decoration: underline;
-    color: rgb(22, 143, 224);
+/*    text-decoration: underline;*/
+    text-decoration: none;
+    border-bottom: 0.1rem solid rgb(154, 171, 185);
+    color: rgb(154, 171, 185);
     transition: all linear 0.2s;
     font-weight: bold;
 }
 .a-in-text:active, .a-in-text:hover, .a-in-text:focus{
-  color: black;
+/*  color: black;*/
+    color: rgb(25, 52, 70);
+    border-bottom: 0.1rem solid rgb(25, 52, 70);
 }
 .p-paragraph {
   margin: 0;
@@ -183,13 +203,15 @@ section code {
 }
 .ordered-list-steps {
     padding: 1.5rem;
-    border-bottom: 0.08rem solid rgba(22, 143, 224,0.5);
+/*    border-bottom: 0.08rem solid rgba(22, 143, 224,0.5);*/
+    border-bottom: 0.08rem solid rgb(154, 171, 185);
 }
 .unordered-list-item {
-    padding:1.2rem;
+    padding:1rem;
     margin: 0.5rem 0;
     list-style: none;
-    border-left: 0.2rem solid rgba(22, 143, 224,0.5);
+/*    border-left: 0.2rem solid rgba(22, 143, 224,0.5);*/
+    border-left: 0.2rem solid rgb(154, 171, 185);
 }
 
 
@@ -200,21 +222,22 @@ section code {
 
 /*COLOUR SWATCHES*/
 .blue {
-    background-color: rgb(22, 143, 224);
+/*    background-color: rgb(22, 143, 224);*/
+    background-color: rgb(154, 171, 185);
 }
-.blue p {
+.blueHover {
+    background-color: rgb(25, 52, 70);
+}
+.blue p, .blueHover p {
     color: white;
 }
-.red {
+.coral {
     background-color: rgb(226, 111, 118);
 }
-.red p {
-    color: white;
+.coralHover {
+    background-color: rgb(183, 164, 154);
 }
-.beige {
-    background-color: rgb(210,180,140);
-}
-.beige p {
+.coral p, .coralHover p {
     color: white;
 }
 /*END OF COLOUR SWATCHES*/
@@ -261,7 +284,8 @@ section code {
 }
 
 .main-nav-bar a:active, .main-nav-bar a:hover, .main-nav-bar a:focus {
-    background-color: rgb(210,180,140);
+/*    background-color: rgb(210,180,140);*/
+    background-color: rgb(154, 171, 185);
     color: white;
 }
 
@@ -315,7 +339,8 @@ figcaption {
     width: 100%;
     border: none;
     border-radius: 0.2rem;
-    background-color: rgb(210,180,140);
+/*    background-color: rgb(210,180,140);*/
+    background-color: rgb(226, 180, 154);
     transition: background-color 0.3s ease;
 }
 .button-add:active, .button-add:hover, .button-add:focus {
