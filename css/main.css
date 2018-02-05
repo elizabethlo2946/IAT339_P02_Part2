@@ -1,18 +1,14 @@
 /*
-COLORS
-
-FONT COLOR (BROWN):
+BROWN:
 color: rgb(73,45,9);
 
 BLUE: 
 rgb(154, 171, 185);
-
 BLUE ON HOVER:
 rgb(25, 52, 70);
 
 CORAL: 
 rgb(226, 180, 154);
-
 CORAL ON HOVER:
 rgb(183, 164, 154);
 
@@ -22,31 +18,26 @@ TAN: rgb(210,180,140);
 *, *::before, *::after {
     box-sizing: border-box;
 }
-
 body {
 /*    font-family: 'Hind Siliguri', sans-serif;*/
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02rem;
     color: rgb(73,45,9);
 }
-
 h2, h3, nav {
     font-weight: lighter;
     letter-spacing: 0.05em;
 }
-
 /*Everything but the combined elements, basically...*/
 h2, h3, h4, ol, p, code {
     margin: 3rem;
     font-weight: lighter;
 }
-
 h1 {
     font-weight: lighter;
     letter-spacing: 0.3em;
 /*    margin: 3rem 0;*/
 }
-
 h2 {
     margin: 3rem 0;
     color: white;
@@ -55,7 +46,6 @@ h2 {
     padding: 1.5rem;
     border-radius: 0.2rem;
 }
-
 section code {
     background-color: #eee;
     padding: 1rem;
@@ -63,8 +53,12 @@ section code {
 }
 
 
-/* Interactive elements */
 
+
+
+
+
+/* Interactive elements */
 .button-submit {
     margin: 0;
     padding: 0.8rem;
@@ -77,7 +71,6 @@ section code {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.1rem;
-
 
     background-color: rgb(226, 180, 154);
     -webkit-transition: background-color 0.5s ease-out;
@@ -112,6 +105,7 @@ section code {
 .button-reset:active, .button-reset:hover, .button-reset:focus{
     background-color: rgb(183, 164, 154);
 }
+
 .input-text {
     margin: 0;
     padding: 0.5rem;
@@ -133,6 +127,9 @@ section code {
 
 
 
+
+
+
 /*TEXT STYLING*/
 
 .text-styling {
@@ -142,8 +139,10 @@ section code {
     padding: 0.5rem 1rem;
     color: rgb(154, 171, 185);
     text-transform: uppercase;
+    text-align: center;
     font-size: 1.5rem;
     border: 0.5rem solid rgb(154, 171, 185);
+    width: 10rem;
 }
 
 .h2-headings {
@@ -212,9 +211,15 @@ section code {
 /*    border-left: 0.2rem solid rgba(22, 143, 224,0.5);*/
     border-left: 0.2rem solid rgb(154, 171, 185);
 }
-
-
 /*END OF TEXT STYLING*/
+
+
+
+
+
+
+
+
 
 
 
@@ -253,8 +258,12 @@ section code {
 
 
 
-/*START OF MAIN NAV*/
 
+
+
+
+
+/*START OF MAIN NAV*/
 .main-nav-bar {
     display: flex;
     position: relative;
@@ -273,7 +282,6 @@ section code {
     text-transform: uppercase;
     display: flex;
 }
-
 .main-nav-bar a {
     text-decoration: none;
     color: rgb(73,45,9);
@@ -282,7 +290,6 @@ section code {
     transition: all linear 0.2s;
     border-radius: 0.2em;
 }
-
 .main-nav-bar a:active, .main-nav-bar a:hover, .main-nav-bar a:focus {
 /*    background-color: rgb(210,180,140);*/
     background-color: rgb(154, 171, 185);
@@ -302,17 +309,13 @@ li:hover > ul.main-nav-dropMenu li a{
     visibility: visible;
     display: flex;
 }
-
 li > ul.main-nav-dropMenu {
     position: absolute;
 }
-
 #main-nav-categories > ul.main-nav-dropMenu li a{
     position: relative;
     visibility: hidden;
 }
-
-
 /*END OF MAIN NAV*/
 
 
@@ -320,8 +323,10 @@ li > ul.main-nav-dropMenu {
 
 
 
-/*FIGURE STYLING*/
 
+
+
+/*FIGURE STYLING*/
 figcaption {
     letter-spacing: 0.08rem;
 }
