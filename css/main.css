@@ -35,6 +35,34 @@ h2, h3, nav {
     letter-spacing: 0.05em;
 }
 
+/*Everything but the combined elements, basically...*/
+h2, h3, h4, ol, p, code {
+    margin: 3rem;
+    font-weight: lighter;
+}
+
+h1 {
+    font-weight: lighter;
+    letter-spacing: 0.3em;
+/*    margin: 3rem 0;*/
+}
+
+h2 {
+    margin: 3rem 0;
+    color: white;
+    background-color: rgb(154, 171, 185);
+    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.1);
+    padding: 1.5rem;
+    border-radius: 0.2rem;
+}
+
+section code {
+    background-color: #eee;
+    padding: 1rem;
+    display: block;
+}
+
+
 /* Interactive elements */
 
 .button-submit {
@@ -101,32 +129,7 @@ h2, h3, nav {
   padding-bottom: 1rem;
 }
 
-/*Everything but the combined elements, basically...*/
-h1, h2, h3, h4, ul, ol, p, code {
-    margin: 3rem;
-    font-weight: lighter;
-}
 
-h1 {
-    font-weight: lighter;
-    letter-spacing: 0.3em;
-    margin: 3rem 0;
-}
-
-h2 {
-    margin: 3rem 0;
-    color: white;
-    background-color: rgb(154, 171, 185);
-    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.1);
-    padding: 1.5rem;
-    border-radius: 0.2rem;
-}
-
-section code {
-    background-color: #eee;
-    padding: 1rem;
-    display: block;
-}
 
 
 
@@ -136,15 +139,11 @@ section code {
     list-style: none;
 }
 .h1-titles {
-    margin: 0;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
     color: rgb(154, 171, 185);
     text-transform: uppercase;
     font-size: 1.5rem;
     border: 0.5rem solid rgb(154, 171, 185);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .h2-headings {
@@ -259,13 +258,14 @@ section code {
 .main-nav-bar {
     display: flex;
     position: relative;
+    flex: 1 1 auto;
     justify-content: center;
-    width: 100%;
+/*    width: 100%;*/
 
     /*    a drop shadow for the menu*/
     box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.1);
 /*    a magic number to see the menu at its greatest...*/
-    margin-bottom: 5rem;
+/*    margin-bottom: 5rem;*/
 }
 
 .main-nav-bar ul {
