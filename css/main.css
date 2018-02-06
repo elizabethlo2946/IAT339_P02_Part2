@@ -26,10 +26,9 @@ body {
 }
 h2, h3, nav {
     font-weight: lighter;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.07em;
 }
-/*Everything but the combined elements, basically...*/
-h2, h3, h4, ol, p, code {
+h3, h4, ol, code {
     margin: 3rem;
     font-weight: lighter;
 }
@@ -39,12 +38,15 @@ h1 {
 /*    margin: 3rem 0;*/
 }
 h2 {
-    margin: 3rem 0;
-    color: white;
-    background-color: rgb(154, 171, 185);
-    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.1);
-    padding: 1.5rem;
-    border-radius: 0.2rem;
+    color: rgb(154, 171, 185);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    display: block;
+/*    color: white;*/
+/*    background-color: rgb(154, 171, 185);*/
+/*    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.1);*/
+/*    margin-top: 1.5rem;*/
+/*    border-radius: 0.2rem;*/
 }
 section code {
     background-color: #eee;

@@ -8,8 +8,24 @@
 }
 /*each box*/
 .col {
-    background-color: #eee;
+/*    background-color: #eee;*/
     margin: 1rem 0;
+}
+.row {
+    margin: 3rem 0;
+}
+.row .col{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+.row .col img{
+    width: 60%;
+}
+.row span {
+    width: 40%;
+    text-align: right;
 }
 
 /*For 1 strip across: likely main nav and footer*/
@@ -28,9 +44,8 @@
     display: flex;
     justify-content: space-between;
 }
-.flex-grid-twos .col {
-/*    Under 50% to provide some white space between columns: is this the best way? Or maybe margin should be better*/
-    width: 49.5%;
+.flex-grid-twos .col{
+    width: 50%;
 }
 
 /*For 3 columns*/
