@@ -5,6 +5,7 @@
 /*100% width*/
 .flex-grid {
     display: flex;
+    width: 100%;
 }
 /*each box*/
 .col {
@@ -14,7 +15,7 @@
 .row {
     margin: 3rem 0;
 }
-.row .col{
+.row .col-6to4{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -22,8 +23,9 @@
     background-color: #eee;
     margin: 0;
 }
-.row .col img{
+.row .col-6to4 img{
     width: 60%;
+    margin: 0;
 }
 .row span {
     width: 40%;
