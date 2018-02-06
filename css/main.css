@@ -143,6 +143,7 @@ section code {
     font-size: 1.5rem;
     border: 0.5rem solid rgb(154, 171, 185);
     width: 10rem;
+    max-height: 4rem;
 }
 
 .h2-headings {
@@ -265,7 +266,7 @@ section code {
 
 /*START OF MAIN NAV*/
 .main-nav-bar {
-    display: flex;
+    display: inline-block;
     position: relative;
     flex: 1 1 auto;
     justify-content: center;
@@ -276,11 +277,10 @@ section code {
 /*    a magic number to see the menu at its greatest...*/
 /*    margin-bottom: 5rem;*/
 }
-
 .main-nav-bar ul {
     list-style: none;
     text-transform: uppercase;
-    display: flex;
+    display: block;
 }
 .main-nav-bar a {
     text-decoration: none;
@@ -289,21 +289,13 @@ section code {
     padding: 1rem;
     transition: all linear 0.2s;
     border-radius: 0.2em;
+    background-color: white;
 }
 .main-nav-bar a:active, .main-nav-bar a:hover, .main-nav-bar a:focus {
 /*    background-color: rgb(210,180,140);*/
     background-color: rgb(154, 171, 185);
     color: white;
 }
-
-/*
-li:hover > ul.main-nav-dropMenu li a{
-    flex: 1;
-    visibility: visible;
-    display: flex;
-    overflow: scroll;
-}
-*/
 #main-nav-categories:hover > ul.main-nav-dropMenu li a{
     flex: 1;
     visibility: visible;
@@ -315,6 +307,15 @@ li > ul.main-nav-dropMenu {
 #main-nav-categories > ul.main-nav-dropMenu li a{
     position: relative;
     visibility: hidden;
+}
+
+@media (min-width:48em) {
+    .main-nav-bar {
+        display: flex;
+    }
+    .main-nav-bar ul{
+        display: flex;
+    }
 }
 /*END OF MAIN NAV*/
 
