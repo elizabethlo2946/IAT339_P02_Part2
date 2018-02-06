@@ -40,7 +40,7 @@ h1 {
 h2 {
     color: rgb(154, 171, 185);
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     display: block;
 /*    color: white;*/
 /*    background-color: rgb(154, 171, 185);*/
@@ -340,25 +340,26 @@ figcaption {
 .multi-product-item {
     display: block;
 }
-.button-add {
-    margin-top: 2rem;
+.button-buy {
+    margin-top: 1.5rem;
     padding: 0.5rem 1rem;
     color: white;
-    width: 100%;
+    text-transform: uppercase;
+    width: 50%;
     border: none;
     border-radius: 0.2rem;
 /*    background-color: rgb(210,180,140);*/
     background-color: rgb(226, 180, 154);
     transition: background-color 0.3s ease;
 }
-.button-add:active, .button-add:hover, .button-add:focus {
+.button-buy:active, .button-buy:hover, .button-buy:focus {
     background-color: rgb(142, 114, 78);
     color: white;
 }
 .title-of-item {
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.08rem;
+    letter-spacing: 0.3rem;
 }
 .brief-description {
     color: #555;
