@@ -56,6 +56,10 @@ section code {
 
 
 
+
+
+
+
 .landing-img{
     width: 100vw;
     position: relative;
@@ -67,6 +71,8 @@ section code {
 .landing-img img{
     width: 100%;
 }
+
+
 
 
 
@@ -285,12 +291,7 @@ section code {
     position: relative;
     flex: 1 1 auto;
     justify-content: center;
-/*    width: 100%;*/
-
-    /*    a drop shadow for the menu*/
     box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.1);
-/*    a magic number to see the menu at its greatest...*/
-/*    margin-bottom: 5rem;*/
 }
 .main-nav-bar ul {
     list-style: none;
@@ -324,7 +325,7 @@ li > ul.main-nav-dropMenu {
     visibility: hidden;
 }
 
-@media (min-width:48em) {
+@media (min-width:971px) {
     .main-nav-bar {
         display: flex;
     }
@@ -345,10 +346,6 @@ li > ul.main-nav-dropMenu {
 /*FIGURE STYLING*/
 figcaption {
     letter-spacing: 0.08rem;
-}
-.responsive-image {
-    max-width: 100%;
-    margin-bottom: 1rem;
 }
 .multi-product-item {
     display: block;

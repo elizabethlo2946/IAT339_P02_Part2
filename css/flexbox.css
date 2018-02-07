@@ -22,6 +22,7 @@
     align-items: center;
     background-color: #eee;
     margin: 0;
+    padding-right: 2rem;
 }
 .row .col-6to4 img{
     width: 60%;
@@ -31,7 +32,6 @@
     width: 40%;
     text-align: right;
     padding-left: 3rem;
-    padding-right: 2rem;
 }
 
 /*For 1 strip across: likely main nav and footer*/
@@ -65,11 +65,37 @@
 }
 
 /*For 4 columns*/
+.responsive-image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+.flex-grid-fours img {
+    display: block;
+}
 .flex-grid-fours {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .flex-grid-fours .col {
-/*    Under 25% to provide white space between columns*/
-    width: 24.5%;
+    width: 100%;
+}
+@media (min-width: 500px) {
+    .flex-grid-fours {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .flex-grid-fours .col {
+        width: 50%;
+    }
+}
+@media (min-width: 900px) {
+    .flex-grid-fours {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .flex-grid-fours .col {
+        width: 25%;
+    }
 }
