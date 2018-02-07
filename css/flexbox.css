@@ -5,12 +5,19 @@
 /*100% width*/
 .flex-grid {
     display: flex;
+    width: 100%;
 }
 /*each box*/
 .col {
-    background-color: #eee;
+/*    background-color: #eee;*/
     margin: 1rem 0;
 }
+
+
+
+
+
+
 
 /*For 1 strip across: likely main nav and footer*/
 .flex-grid .col {
@@ -24,13 +31,29 @@
     padding-left: 10%;
     width: 90%;
 }
+
 .flex-grid-twos {
     display: flex;
+    justify-content: space-around;
+}
+.flex-grid-twos .col{
+    width: 50%;
+}
+.flex-grid-footer {
+    display: block;
     justify-content: space-between;
 }
-.flex-grid-twos .col {
-/*    Under 50% to provide some white space between columns: is this the best way? Or maybe margin should be better*/
-    width: 49.5%;
+.flex-grid-footer .col {
+    width: 100%;
+}
+@media (min-width:500px) {
+    .flex-grid-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex-grid-footer .col {
+        width: 50%;
+    }
 }
 
 /*For 3 columns*/
@@ -39,16 +62,53 @@
     justify-content: space-between;
 }
 .flex-grid-threes .col {
-/*    Under 33% to provide white space between columns*/
-    width: 32.5%;
+    width: 33%;
 }
 
 /*For 4 columns*/
+.responsive-image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+}
 .flex-grid-fours {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .flex-grid-fours .col {
-/*    Under 25% to provide white space between columns*/
-    width: 24.5%;
+    width: 100%;
+}
+@media (min-width: 500px) {
+    .flex-grid-fours {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .flex-grid-fours .col {
+        width: 50%;
+    }
+}
+@media (min-width: 900px) {
+    .flex-grid-fours, .flex-grid-row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .flex-grid-fours .col {
+        width: 25%;
+    }
+    .flex-grid-row {
+        align-items: center;
+    }
+    .flex-grid-row .col-60 {
+        flex-grow: 1;
+    }
+    .flex-grid-row .col-60 img{
+        width: 100%;
+    }
+    .flex-grid-row .col-40 {
+        width: 40%;
+        text-align: right;
+        padding-left: 2rem;
+    }
 }
