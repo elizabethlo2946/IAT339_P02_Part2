@@ -35,12 +35,12 @@ h3, h4, ol, code {
 h1 {
     font-weight: lighter;
     letter-spacing: 0.3em;
+    background-color: white;
 /*    margin: 3rem 0;*/
 }
 h2 {
     color: rgb(154, 171, 185);
-    margin-top: 0;
-    margin-bottom: 2rem;
+    margin: 3rem 0;
     display: block;
 /*    color: white;*/
 /*    background-color: rgb(154, 171, 185);*/
