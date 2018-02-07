@@ -28,7 +28,7 @@ h2, h3, nav {
     font-weight: lighter;
     letter-spacing: 0.07em;
 }
-h3, h4, ol, code {
+h4, ol, code {
     margin: 3rem;
     font-weight: lighter;
 }
@@ -53,6 +53,60 @@ section code {
     padding: 1rem;
     display: block;
 }
+
+footer {
+    background-color: #eee;
+    margin-top: 5rem;
+}
+
+
+
+/*START OF FOOTER STYLING FROM 
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons. Again, "fa" must be used in order to access the service listed in the <link> of the HTML <head> seciton
+*/
+a.fa {
+    padding: 2rem;
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(154, 171, 185);
+    transition: all 0.3s ease;
+}
+
+.fa:active, .fa:hover, .fa:focus {
+    color: rgb(25, 52, 70);
+}
+
+.footer-list {
+    display: block;
+    list-style: none;
+}
+.footer-list h3 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: grey;
+    text-transform: uppercase;
+}
+.footer-list li {
+    border-bottom: 0.03rem solid rgba(25, 52, 70, 0.8);
+    padding: 2rem 0;
+    text-align: center;
+}
+.footer-list a {
+    text-decoration: none;
+    color: grey;
+    font-size: 0.8rem;
+    letter-spacing: 0.08rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.footer-list a:active, .footer-list a:hover, .footer-list a:focus {
+    color: rgb(25, 52, 70);
+}
+/*END OF FOOTER STYLING*/
 
 
 
@@ -118,10 +172,10 @@ section code {
 
 /*  background-color: rgba(210,180,140,1);*/
     background-color: rgb(226, 180, 154);
-  -webkit-transition: background-color, color 0.3s ease-out;
-  transition: background-color, color 0.3s ease-out;
-  box-shadow: none;
-  border-radius: 0.2rem;
+    -webkit-transition: background-color, color 0.3s ease-out;
+    transition: background-color, color 0.3s ease-out;
+    box-shadow: none;
+    border-radius: 0.2rem;
 }
 .button-reset:active, .button-reset:hover, .button-reset:focus{
     background-color: rgb(183, 164, 154);

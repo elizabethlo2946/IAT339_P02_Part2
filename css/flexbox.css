@@ -18,66 +18,6 @@
 
 
 
-/*
-.row {
-    margin: 3rem 0;
-}
-*/
-
-/*
-.col-6to4 {
-    flex-wrap: wrap;
-}
-@media (min-width:597px) {
-    .col-6to4 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0;
-    padding-right: 3rem;
-    align-items: center;
-    }
-    .col-6to4 span {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: right;
-        justify-content: flex-end;
-    }
-}
-*/
-
-
-/*
-.row .col-6to4{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    background-color: #eee;
-    margin: 0;
-    padding-right: 2rem;
-}
-.row .col-6to4 img{
-    width: 60%;
-    margin: 0;
-}
-.row span {
-    width: 40%;
-    text-align: right;
-    padding-left: 3rem;
-}
-@media (min-width: 644px) {
-    .row .col-6to4 img {
-        width: 100%;
-    }
-    .row .col-6to4 {
-        display: block;
-        flex-wrap: wrap;
-    }
-}
-*/
 
 /*For 1 strip across: likely main nav and footer*/
 .flex-grid .col {
@@ -91,12 +31,29 @@
     padding-left: 10%;
     width: 90%;
 }
+
 .flex-grid-twos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .flex-grid-twos .col{
     width: 50%;
+}
+.flex-grid-footer {
+    display: block;
+    justify-content: space-between;
+}
+.flex-grid-footer .col {
+    width: 100%;
+}
+@media (min-width:500px) {
+    .flex-grid-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex-grid-footer .col {
+        width: 50%;
+    }
 }
 
 /*For 3 columns*/
@@ -105,8 +62,7 @@
     justify-content: space-between;
 }
 .flex-grid-threes .col {
-/*    Under 33% to provide white space between columns*/
-    width: 32.5%;
+    width: 33%;
 }
 
 /*For 4 columns*/
@@ -155,8 +111,4 @@
         text-align: right;
         padding-left: 2rem;
     }
-}
-
-.flex-grid-row .col-40 p{
-    padding: 1rem 0;
 }
