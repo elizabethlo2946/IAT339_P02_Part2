@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>LOK.E</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/flexbox.css">
+        
+        <!-- THE ICON for "categories" in nav bar -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--        SOCIAL MEDIA ICONS for the footer-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <div class="flex-grid-container">
+            <header>
+                <nav class="main-nav-bar">
+                    <a href="index.html" class="companyName"><h1 class="h1-titles">Lok.E</h1></a>
+                    <ul>
+                        <li id="main-nav-categories">
+                            <a href="categories.html">
+                                <div>Categories <i class="fa">&#xf107;</i></div>
+                            </a>
+                            <ul class="main-nav-dropMenu">
+                                <li><a href="bathroom.html" class="menu-item">Bathroom</a></li>
+                                <li><a href="beds.html" class="menu-item">Beds</a></li>
+                                <li><a href="childrens_beds.html" class="menu-item">Children's Beds</a></li>
+                                <li><a href="desks.html" class="menu-item">Desks</a></li>
+                                <li><a href="kitchen.html" class="menu-item">Kitchen</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="index.html"><div class="main-nav-popular">New and Popular</div></a>
+                        </li>
+                        <li>
+                            <a href="sales.html"><div class="main-nav-sales">Sales</div></a>
+                        </li>
+                        <li>
+                            <a href="collections.html"><div class="main-nav-collections">Collections</div></a>
+                        </li><li>
+                            <a href="myCart.html"><div class="main-nav-collections">My Cart</div></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            
+            
+            
+<!--            same layout as "newest selections"-->
+            <section>
+                <div class="flex-grid-row">
+                    <div class="col-60 myCart-form">
+                        <h2>MY CART</h2>
+                        <section>
+                            <h3>Customer Information</h3>
+                            <form method="post" action="#">
+                                <label for="form-name">Name:</label>
+                                <input type="text" id="form-name" placeholder="Jane Doe">
+                            </form>
+                        </section>
+                    </div>
+                    <div class="col-40 myCart-summary">
+                        <div class="flex-grid-twos">
+                            <div class="col"><a class="button-submit" href="#">Submit</a></div>
+                            <div class="col"><a class="button-reset" href="#">Reset</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!--div close for flex-grid-container -->
+        </div>
+    </body>
+</html>
