@@ -225,16 +225,16 @@ a.fa {
     letter-spacing: 0.2rem;
     color: grey;
     text-transform: uppercase;
+    padding: 1rem 0;
 }
 .footer-list li {
 /*    border-bottom: 0.03rem solid rgba(25, 52, 70, 0.8);*/
-/*    padding: 2rem 0;*/
+    padding: 1rem 0;
     text-align: center;
 }
 .footer-list a {
     text-decoration: none;
     border-bottom: 0.03rem solid rgba(25, 52, 70, 0.8);
-    padding: 1rem 0;
     color: grey;
     font-size: 0.8rem;
     letter-spacing: 0.08rem;
@@ -375,7 +375,6 @@ a.fa {
     background-color: #eee;
     color: rgb(25, 52, 70);;
 }
-
 /*user text input is at the top of main.css*/
 /*
 .input-text {

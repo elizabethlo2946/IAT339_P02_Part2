@@ -78,6 +78,9 @@
 .flex-grid-fours .col {
     width: 100%;
 }
+.flex-grid-row {
+    margin-top: 2rem;
+}
 @media (min-width: 500px) {
     .flex-grid-fours {
         display: flex;
@@ -98,7 +101,7 @@
         width: 25%;
     }
     .flex-grid-row {
-        align-items: top;
+        align-items: center;
     }
     .flex-grid-row .col-60 {
         flex-grow: 2;
@@ -111,6 +114,5 @@
         width: 40%;
         text-align: right;
         margin-left: 1rem;
-/*        padding-left: 2rem;*/
     }
 }
