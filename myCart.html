@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>LOK.E</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/flexbox.css">
+        
+        <!-- THE ICON for "categories" in nav bar -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--        SOCIAL MEDIA ICONS for the footer-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <div class="flex-grid-container">
+            <header>
+                <nav class="main-nav-bar">
+                    <a href="index.html" class="companyName"><h1 class="h1-titles">Lok.E</h1></a>
+                    <ul>
+                        <li id="main-nav-categories">
+                            <a href="categories.html">
+                                <div>Categories <i class="fa">&#xf107;</i></div>
+                            </a>
+                            <ul class="main-nav-dropMenu">
+                                <li><a href="bathroom.html" class="menu-item">Bathroom</a></li>
+                                <li><a href="beds.html" class="menu-item">Beds</a></li>
+                                <li><a href="childrens_beds.html" class="menu-item">Children's Beds</a></li>
+                                <li><a href="desks.html" class="menu-item">Desks</a></li>
+                                <li><a href="kitchen.html" class="menu-item">Kitchen</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="index.html"><div class="main-nav-popular">New and Popular</div></a>
+                        </li>
+                        <li>
+                            <a href="sales.html"><div class="main-nav-sales">Sales</div></a>
+                        </li>
+                        <li>
+                            <a href="collections.html"><div class="main-nav-collections">Collections</div></a>
+                        </li><li>
+                            <a href="myCart.html"><div class="main-nav-collections">My Cart</div></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            
+            
+            
+<!--            same layout as "newest selections"-->
+            <section>
+                <h2>MY CART</h2>
+                <div class="flex-grid-row">
+                    <div class="col-60">
+                        <section class="myCart-form">
+                            <h3>Customer Information</h3>
+<!--
+                            <form method="post" action="#">
+                                <label for="form-name">Name:</label>
+                                <input type="text" id="form-name" placeholder="Jane Doe">
+                            </form>
+-->
+                            <form method="post" action="#">
+                                <label for="form-email">E-mail:</label>
+                                <input type="text" id="form-name" placeholder="loke.furniture@loke.com">
+                            </form>
+                        </section>
+                        <section class="myCart-form">
+                            <h3>Payment Information</h3>
+                            <h4>Billing Address</h4>
+                            <form method="post" action="#">
+                                <label for="form-country">Country:</label>
+                                <select name="form-country" data-type="select" title="Country"> Country
+                                    <option value="Canada">Canada</option>
+                                    <option value="USA">USA</option>
+                                </select>
+                            </form>
+                            <form method="post" action="#">
+                                <label for="form-firstName">First Name:</label>
+                                <input type="text" id="form-firstName">
+                            </form>
+                            <form method="post" action="#">
+                                <label for="form-firstName">Last Name:</label>
+                                <input type="text" id="form-lastName">
+                            </form>
+                            <form method="post" action="#">
+                                <label for="form-address1">Address 1:</label>
+                                <input type="text" id="form-address1">
+                            </form>
+                            <form method="post" action="#">
+                                <label for="form-address2">Address 2:</label>
+                                <input type="text" id="form-address2">
+                            </form>
+                            <form method="post" action="#">
+                                <label for="form-city">City:</label>
+                                <select name="form-city" data-type="select" title="City">City
+                                    <option value="City1">City1</option>
+                                    <option value="City2">City2</option>
+                                </select>
+                            </form>
+                            <form method="post" action="#">
+                                <label for="form-phoneNumber">Phone Number:</label>
+                                <input type="text" id="form-phoneNumber" placeholder="123 456 7890">
+                            </form>
+                        </section>
+                        <section class="myCart-form">
+                            <h4>Credit card information</h4>
+                            <form method="post" action="#">
+                                <label for="form-cardType">City:</label>
+                                <select name="form-cardType" data-type="select" title="CardType">Card Type
+                                    <option value="visa">Visa</option>
+                                    <option value="masterCard">Master Card</option>
+                                    <option value="americanExpress">American Express</option>
+                                </select>
+                            </form>
+                            <form method="post" action="#">
+                                <label for="form-cardNumber">Credit Card Number:</label>
+                                <input type="text" id="form-cardNumber" placeholder="Enter Credit Card Number">
+                            </form>
+                            <form method="post" action="#">
+                                <label for="form-cardName">Card Holder Name:</label>
+                                <input type="text" id="form-cardName" placeholder="Name of card holder">
+                            </form>
+                        </section>
+                    </div>
+                    <div class="col-40">
+                        <section class="myCart-summary">
+                            <h3>Summary</h3>
+                            <ul>
+                                <div class="flex-grid-twos">
+                                    <div class="col item-name">
+                                        <li>Kitt Desk</li>
+                                        <li>Kitt Desk</li>
+                                        <li>Kitt Desk</li>
+                                        <p>Total</p>
+                                    </div>
+                                    <div class="col price">
+                                        <li>$299</li>
+                                        <li>$299</li>
+                                        <li>$299</li>
+                                        <div class="price">
+                                        <p>$897</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </ul>
+                            <div class="flex-grid-twos">
+                                <div class="col"><a class="button-reset" href="#">Reset</a></div>
+                                <div class="col"><a class="button-submit" href="#">Submit</a></div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        <!--div close for flex-grid-container -->
+        </div>
+        
+        
+        
+        
+        <footer>
+<!--            <div class="flex-grid-container">-->
+                <div class="flex-grid-footer">
+                    <div class="col">
+                        <ul class="footer-list">
+                            <li><h3>About</h3></li>
+                            <li><a href="#">Our story</a></li>
+                            <li><a href="#">Return policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="footer-list"> 
+                            <li><h3>Contact</h3></li>
+                            <li><a href="#">loke.furniture@loke.com</a></li>
+                            <li><a href="#">Newsletter sign up</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="flex-grid-threes social-media">
+                    <div class="col">
+                        <a href="#" class="fa fa-facebook"></a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="fa fa-twitter"></a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+<!--            </div>-->
+        </footer>
+    </body>
+</html>
