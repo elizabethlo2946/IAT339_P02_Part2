@@ -81,20 +81,23 @@ a.fa {
 .footer-list {
     display: block;
     list-style: none;
+    padding-right: 10%;
 }
 .footer-list h3 {
     font-size: 0.9rem;
     font-weight: bold;
     letter-spacing: 0.2rem;
-    color: grey;
+    color: #999;
     text-transform: uppercase;
+    padding: 0.3rem 0;
 }
 .footer-list li {
-    border-bottom: 0.03rem solid rgba(25, 52, 70, 0.8);
-    padding: 2rem 0;
+/*    border-left: 0.05rem solid rgba(25, 52, 70, 0.4);*/
+    padding: 0.8rem 0;
     text-align: center;
 }
 .footer-list a {
+    border-bottom: 0.03rem solid rgba(25, 52, 70, 0.4);
     text-decoration: none;
     color: grey;
     font-size: 0.8rem;
@@ -337,11 +340,22 @@ a.fa {
 
 
 
-
-
 /*START OF MAIN NAV*/
+/*
+#menuToggle img{
+    display: flex;
+    justify-content: flex-end;
+    width: 1.5rem;
+    margin: 2rem;
+}
+#menuToggle input {
+    display: inline-block;
+}
+*/
 .main-nav-bar {
     display: inline-block;
+/*    display: none;*/
+/*    visibility: hidden;*/
     position: relative;
     flex: 1 1 auto;
     justify-content: center;
@@ -380,6 +394,9 @@ li > ul.main-nav-dropMenu {
 }
 
 @media (min-width:971px) {
+    #menuToggle {
+        display: none;
+    }
     .main-nav-bar {
         display: flex;
     }
