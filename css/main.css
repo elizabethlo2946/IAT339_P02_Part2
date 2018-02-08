@@ -2,12 +2,12 @@
 BROWN:
 color: rgb(73,45,9);
 
-BLUE: 
+BLUE:
 rgb(154, 171, 185);
 BLUE ON HOVER:
 rgb(25, 52, 70);
 
-CORAL: 
+CORAL:
 rgb(226, 180, 154);
 CORAL ON HOVER:
 rgb(183, 164, 154);
@@ -152,7 +152,7 @@ footer {
     color: white;
 }
 /*A bandaid fix... otherwise, a element has background transition colour too, as specified in .main-nav-bar a*/
-a.companyName:active, a.companyName:hover, a.companyName:focus {
+.main-nav-bar .companyName:active, .main-nav-bar a.companyName:hover, .main-nav-bar a.companyName:focus {
     background-color: white;
 }
 #main-nav-categories:hover > ul.main-nav-dropMenu li a{
@@ -168,7 +168,7 @@ li > ul.main-nav-dropMenu {
     visibility: hidden;
 }
 
-@media (min-width:971px) {
+@media (min-width:1144px) {
     .main-nav-bar {
         display: flex;
     }
@@ -198,7 +198,7 @@ li > ul.main-nav-dropMenu {
 
 
 
-/*START OF FOOTER STYLING FROM 
+/*START OF FOOTER STYLING FROM
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons. Again, "fa" must be used in order to access the service listed in the <link> of the HTML <head> seciton
 */
 a.fa {
@@ -226,19 +226,19 @@ a.fa {
     letter-spacing: 0.2rem;
     color: #999;
     text-transform: uppercase;
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
     padding: 0.3rem 0;
 }
 .footer-list li {
 /*    border-left: 0.05rem solid rgba(25, 52, 70, 0.4);*/
     padding: 0.8rem 0;
-=======
+/*=======*/
     padding: 1rem 0;
 }
 .footer-list li {
 /*    border-bottom: 0.03rem solid rgba(25, 52, 70, 0.8);*/
     padding: 1rem 0;
->>>>>>> myCart
+/*>>>>>>> myCart*/
     text-align: center;
 }
 .footer-list a {
@@ -250,7 +250,7 @@ a.fa {
     letter-spacing: 0.08rem;
     text-align: center;
     text-transform: uppercase;
-    
+
     transition: all 0.3s ease;
 }
 .footer-list a:active, .footer-list a:hover, .footer-list a:focus {
@@ -443,7 +443,7 @@ a.fa {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    
+
     background-color: white;
 /*    background-color: rgba(22, 143, 224,0.2);*/
 /*    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.3);*/
@@ -458,7 +458,7 @@ a.fa {
     font-size: 0.8rem;
     font-weight: bolder;
     letter-spacing: 0.2rem;
-    
+
     border-bottom: 0.1rem solid rgb(226, 180, 154);
 }
 .a-in-text {
