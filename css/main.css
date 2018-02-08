@@ -19,7 +19,6 @@ TAN: rgb(210,180,140);
     box-sizing: border-box;
 }
 body {
-/*    font-family: 'Hind Siliguri', sans-serif;*/
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02rem;
     color: rgb(73,45,9);
@@ -29,24 +28,36 @@ h2, h3, nav {
     letter-spacing: 0.07em;
 }
 h4, ol, code {
-    margin: 3rem;
+    margin: 2rem 0;
     font-weight: lighter;
 }
 h1 {
     font-weight: lighter;
     letter-spacing: 0.3em;
     background-color: white;
-/*    margin: 3rem 0;*/
+    transition: all 0.3s ease;
+}
+h1:active, h1:hover, h1:focus {
+    color: rgb(25, 52, 70);
+    border-color: rgb(25, 52, 70);
 }
 h2 {
     color: rgb(154, 171, 185);
-    margin: 3rem 0;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     display: block;
-/*    color: white;*/
-/*    background-color: rgb(154, 171, 185);*/
-/*    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.1);*/
-/*    margin-top: 1.5rem;*/
-/*    border-radius: 0.2rem;*/
+    width: 100%;
+}
+h3 {
+    background-color: #eee;
+    padding: 2rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+h4 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #888;
 }
 section code {
     background-color: #eee;
@@ -54,10 +65,136 @@ section code {
     display: block;
 }
 
+/*User input text field*/
+input[type=text], select {
+    display: inline-block;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+form {
+    margin: 1rem 0;
+}
+form input {
+    font-size: 0.8rem;
+    letter-spacing: 0.03rem;
+    color: #777
+}
+label, select {
+    color: #888;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07rem;
+}
+select {
+    height: 2.5rem;
+}
+
 footer {
     background-color: #eee;
     margin-top: 5rem;
 }
+
+
+
+
+
+
+
+
+.landing-img{
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+.landing-img img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*START OF MAIN NAV*/
+.main-nav-bar {
+    display: inline-block;
+    position: relative;
+    flex: 1 1 auto;
+    justify-content: center;
+    box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.1);
+}
+.main-nav-bar ul {
+    list-style: none;
+    text-transform: uppercase;
+    display: block;
+}
+.main-nav-bar a {
+    text-decoration: none;
+    color: rgb(73,45,9);
+    display: block;
+    padding: 1rem;
+    border-radius: 0.2em;
+    background-color: white;
+    transition: all linear 0.2s;
+}
+.main-nav-bar a:active, .main-nav-bar a:hover, .main-nav-bar a:focus {
+/*    background-color: rgb(210,180,140);*/
+    background-color: rgb(154, 171, 185);
+    color: white;
+}
+/*A bandaid fix... otherwise, a element has background transition colour too, as specified in .main-nav-bar a*/
+a.companyName:active, a.companyName:hover, a.companyName:focus {
+    background-color: white;
+}
+#main-nav-categories:hover > ul.main-nav-dropMenu li a{
+    flex: 1;
+    visibility: visible;
+    display: flex;
+}
+li > ul.main-nav-dropMenu {
+    position: absolute;
+}
+#main-nav-categories > ul.main-nav-dropMenu li a{
+    position: relative;
+    visibility: hidden;
+}
+
+@media (min-width:971px) {
+    .main-nav-bar {
+        display: flex;
+    }
+    .main-nav-bar ul{
+        display: flex;
+        align-items: center;
+    }
+}
+/*END OF MAIN NAV*/
+
+
+
+
+
+
+
+/*IMPORTED ICON FOR "CATEGORIES" IN MAIN NAV*/
+.fa {
+    font-size:
+}
+
+
+
+
+
+
 
 
 
@@ -90,17 +227,20 @@ a.fa {
     text-transform: uppercase;
 }
 .footer-list li {
-    border-bottom: 0.03rem solid rgba(25, 52, 70, 0.8);
-    padding: 2rem 0;
+/*    border-bottom: 0.03rem solid rgba(25, 52, 70, 0.8);*/
+/*    padding: 2rem 0;*/
     text-align: center;
 }
 .footer-list a {
     text-decoration: none;
+    border-bottom: 0.03rem solid rgba(25, 52, 70, 0.8);
+    padding: 1rem 0;
     color: grey;
     font-size: 0.8rem;
     letter-spacing: 0.08rem;
     text-align: center;
     text-transform: uppercase;
+    
     transition: all 0.3s ease;
 }
 .footer-list a:active, .footer-list a:hover, .footer-list a:focus {
@@ -114,17 +254,69 @@ a.fa {
 
 
 
-.landing-img{
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+
+
+
+
+
+
+
+
+
+/*START: MY CART PAGE*/
+/*
+.myCart-form h3, .myCart-summary h3{
+    border: 0.2rem solid white;
+    text-align: left;
 }
-.landing-img img{
-    width: 100%;
+*/
+/*
+.myCart-form {
+    order: 2;
 }
+.myCart-summary {
+    order: 1;
+}
+@media (min-width: 901px) {
+    .myCart-form {
+        order: 2;
+    }
+    .myCart-summary {
+        order: 1;
+    }
+}
+*/
+.myCart-summary h3 {
+    text-align: left;
+}
+.myCart-summary p {
+    font-weight: bold;
+    color: rgb(154, 171, 185);
+    margin-top: 2rem;
+}
+.myCart-summary ul{
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+}
+.myCart-summary li {
+    padding: 1.5rem 0;
+    border-bottom: 0.08rem solid rgba(154, 171, 185, 0.5);
+}
+.myCart-summary .item-name {
+    text-align: left;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+}
+.myCart-summary .price {
+    text-align: right;
+}
+/*END: MY CART PAGE*/
+
+
+
+
 
 
 
@@ -171,16 +363,21 @@ a.fa {
     letter-spacing: 0.1rem;
 
 /*  background-color: rgba(210,180,140,1);*/
-    background-color: rgb(226, 180, 154);
-    -webkit-transition: background-color, color 0.3s ease-out;
-    transition: background-color, color 0.3s ease-out;
+/*    background-color: rgb(226, 180, 154);*/
+    background-color: #ddd;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
     box-shadow: none;
     border-radius: 0.2rem;
 }
 .button-reset:active, .button-reset:hover, .button-reset:focus{
-    background-color: rgb(183, 164, 154);
+/*    background-color: rgb(183, 164, 154);*/
+    background-color: #eee;
+    color: rgb(25, 52, 70);;
 }
 
+/*user text input is at the top of main.css*/
+/*
 .input-text {
     margin: 0;
     padding: 0.5rem;
@@ -193,10 +390,15 @@ a.fa {
 .input-text-box {
   width: 80%;
 }
+*/
 
 .unordered-list-interac-example {
   padding-bottom: 1rem;
 }
+
+
+
+
 
 
 
@@ -327,10 +529,6 @@ a.fa {
 
 
 
-/*IMPORTED ICON FOR "CATEGORIES" IN MAIN NAV*/
-.fa {
-    font-size:
-}
 
 
 
@@ -339,55 +537,7 @@ a.fa {
 
 
 
-/*START OF MAIN NAV*/
-.main-nav-bar {
-    display: inline-block;
-    position: relative;
-    flex: 1 1 auto;
-    justify-content: center;
-    box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.1);
-}
-.main-nav-bar ul {
-    list-style: none;
-    text-transform: uppercase;
-    display: block;
-}
-.main-nav-bar a {
-    text-decoration: none;
-    color: rgb(73,45,9);
-    display: block;
-    padding: 1rem;
-    transition: all linear 0.2s;
-    border-radius: 0.2em;
-    background-color: white;
-}
-.main-nav-bar a:active, .main-nav-bar a:hover, .main-nav-bar a:focus {
-/*    background-color: rgb(210,180,140);*/
-    background-color: rgb(154, 171, 185);
-    color: white;
-}
-#main-nav-categories:hover > ul.main-nav-dropMenu li a{
-    flex: 1;
-    visibility: visible;
-    display: flex;
-}
-li > ul.main-nav-dropMenu {
-    position: absolute;
-}
-#main-nav-categories > ul.main-nav-dropMenu li a{
-    position: relative;
-    visibility: hidden;
-}
 
-@media (min-width:971px) {
-    .main-nav-bar {
-        display: flex;
-    }
-    .main-nav-bar ul{
-        display: flex;
-    }
-}
-/*END OF MAIN NAV*/
 
 
 
