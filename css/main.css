@@ -670,6 +670,13 @@ figcaption {
     letter-spacing: 0.1rem;
 }
 
+.newSelection .col-40 .title-of-item {
+    font-size: 2rem;
+}
+.newSelection .col-40 .brief-description {
+    font-size: 1rem;
+}
+
 .multiProductBannerItem .col-40 .title-of-item {
     font-size: 2rem;
 }
