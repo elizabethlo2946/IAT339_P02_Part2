@@ -152,7 +152,7 @@ footer {
     color: white;
 }
 /*A bandaid fix... otherwise, a element has background transition colour too, as specified in .main-nav-bar a*/
-a.companyName:active, a.companyName:hover, a.companyName:focus {
+.main-nav-bar .companyName:active, .main-nav-bar a.companyName:hover, .main-nav-bar a.companyName:focus {
     background-color: white;
 }
 #main-nav-categories:hover > ul.main-nav-dropMenu li a{
@@ -168,7 +168,7 @@ li > ul.main-nav-dropMenu {
     visibility: hidden;
 }
 
-@media (min-width:971px) {
+@media (min-width:1144px) {
     .main-nav-bar {
         display: flex;
     }
@@ -226,19 +226,19 @@ a.fa {
     letter-spacing: 0.2rem;
     color: #999;
     text-transform: uppercase;
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
     padding: 0.3rem 0;
 }
 .footer-list li {
 /*    border-left: 0.05rem solid rgba(25, 52, 70, 0.4);*/
     padding: 0.8rem 0;
-=======
+/*=======*/
     padding: 1rem 0;
 }
 .footer-list li {
 /*    border-bottom: 0.03rem solid rgba(25, 52, 70, 0.8);*/
     padding: 1rem 0;
->>>>>>> myCart
+/*>>>>>>> myCart*/
     text-align: center;
 }
 .footer-list a {
