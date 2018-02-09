@@ -634,12 +634,15 @@ figcaption {
 .button-buy {
     margin-top: 1.5rem;
     padding: 0.5rem 1rem;
+    display: inline-block;
     color: white;
     text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
     width: 50%;
     border: none;
     border-radius: 0.2rem;
-/*    background-color: rgb(210,180,140);*/
+   /* background-color: rgb(210,180,140); */
     background-color: rgb(226, 180, 154);
     transition: background-color 0.3s ease;
 }
@@ -647,6 +650,16 @@ figcaption {
     background-color: rgb(142, 114, 78);
     color: white;
 }
+/* .button-buy a:active, .button-buy a:hover, .button-buy a:focus {
+  color: white;
+} */
+/* .button-buy {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+} */
 .title-of-item {
     font-weight: bold;
     text-transform: uppercase;
@@ -660,11 +673,29 @@ figcaption {
     letter-spacing: 0.1rem;
 }
 
-.multiProductBannerItem .col-60 .title-of-item {
+.multiProductBannerItem .col-40 .title-of-item {
     font-size: 2rem;
 }
 .multiProductBannerItem .brief-description {
     font-size: 1rem;
 }
 
+.singleProductShowcaseItem .col-40 .title-of-item {
+    font-size: 1.5rem;
+}
+.singleProductShowcaseItem .brief-description, .singleProductShowcaseItem .type-of-item, .singleProductShowcaseItem .item-reference {
+    font-size: 0.75rem;
+}
+.singleProductShowcaseItem .price-tag {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.2rem;
+}
+.singleProductShowcaseItem .type-of-item, .singleProductShowcaseItem .item-reference  {
+    color: #555;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 0.2rem;
+}
 /*END OF FIGURE STYLING*/
