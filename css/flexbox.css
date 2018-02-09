@@ -106,7 +106,7 @@
     .newSelection {
         align-items: center;
     }
-    
+
     .flex-grid-row .col-60 {
         flex-grow: 2;
         margin-right: 1rem;
@@ -115,6 +115,22 @@
         width: 100%;
     }
     .flex-grid-row .col-40 {
+        width: 40%;
+        text-align: right;
+        margin-left: 1rem;
+    }
+
+    .multiProductBannerItem {
+        align-items: center;
+    }
+    .multiProductBannerItem .col-40 {
+        flex-grow: 2;
+        margin-right: 1rem;
+    }
+    .multiProductBannerItem .col-40 img{
+        width: 100%;
+    }
+    .multiProductBannerItem .col-60 {
         width: 40%;
         text-align: right;
         margin-left: 1rem;
