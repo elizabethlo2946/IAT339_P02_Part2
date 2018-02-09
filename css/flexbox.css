@@ -111,6 +111,10 @@
         flex-grow: 2;
         margin-right: 1rem;
     }
+    .flex-grid-row .col-60 p {
+      flex-grow: 0;
+      width: 60%;
+   }
     .flex-grid-row .col-60 img{
         width: 100%;
     }
