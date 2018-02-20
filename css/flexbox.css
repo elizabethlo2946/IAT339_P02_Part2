@@ -31,6 +31,17 @@
     padding-left: 10%;
     width: 90%;
 }
+/*	.nav-item-links {*/
+.flex-grid-nav {
+    display: block;
+}
+@media (min-width:720px) {
+    .flex-grid-nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+}
 
 .flex-grid-twos {
     display: flex;
@@ -70,12 +81,15 @@
     margin-bottom: 1rem;
     display: block;
 }
-.flex-grid-fours {
+/* .flex-grid-fours {
     display: flex;
     flex-wrap: wrap;
 }
 .flex-grid-fours .col {
     width: 100%;
+} */
+.flex-grid-row {
+    margin-top: 2rem;
 }
 .flex-grid-row {
     margin-top: 2rem;

@@ -15,13 +15,21 @@ rgb(183, 164, 154);
 TAN: rgb(210,180,140);
 */
 
+/* GENERAL STYLING --------------------------------------
+---------------------------------------------------------
+*/
 *, *::before, *::after {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02rem;
     color: rgb(73,45,9);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 h2, h3, nav {
     font-weight: lighter;
@@ -35,7 +43,10 @@ h1 {
     font-weight: lighter;
     letter-spacing: 0.3em;
     background-color: white;
-    transition: all 0.3s ease;
+
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
 h1:active, h1:hover, h1:focus {
     color: rgb(25, 52, 70);
@@ -96,6 +107,9 @@ footer {
     background-color: #eee;
     margin-top: 5rem;
 }
+/* END OF GENERAL STYLING --------------------------------------
+---------------------------------------------------------
+*/
 
 
 
@@ -104,19 +118,17 @@ footer {
 
 
 
-/* .landing-img{
-    width: 100vw;
-    position: relative;
-    height: 60vw;
-}
-.landing-img img{
-    width: 100%;
-} */
+
+
+
+/* PARALLAX IMAGE --------------------------------------
+---------------------------------------------------------
+*/
+/* Start of Jordan Yep credits
+taken from a classmate: Jordan Yep via jordanyep.com */
 .landing-img {
    background-image: url(../img/landingimg.jpg);
-   /* padding-top: 10rem; */
-   /* padding-bottom: 4rem; */
-   /* margin: 0 auto; */
+   /* Is there a way to create alts through this? */
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -128,74 +140,185 @@ footer {
    justify-content: center;
    align-items: center;
 
-    /*color: #eff1f3;*/
     color: #272727;
     letter-spacing: 0.9px;
     text-align: center;
 
 }
+/* end of Jordan Yep credits */
+.landing-img-caption {
+   padding: 2rem;
+   background-color: rgba(255, 255, 255, 0.75);
+   text-transform: uppercase;
+   font-weight: normal;
+}
+/* END OF PARALLAX IMAGE --------------------------------------
+---------------------------------------------------------
+*/
 
 
 
 
 
 
-
-
-/*START OF MAIN NAV*/
-.main-nav-bar {
-    display: inline-block;
+/* NAV BAR --------------------------------------
+---------------------------------------------------------
+*/
+header {
+    box-shadow: 0 0.1rem 0.1rem 0 rgba(0,0,0,.1);
+    display: block;
     position: relative;
-    flex: 1 1 auto;
-    justify-content: center;
-    box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.1);
+    width: 100%;
+    z-index: 100;
 }
-.main-nav-bar ul {
-    list-style: none;
-    text-transform: uppercase;
-    display: block;
-}
-.main-nav-bar a {
-    text-decoration: none;
-    color: rgb(73,45,9);
-    display: block;
-    padding: 1rem;
-    border-radius: 0.2em;
-    background-color: white;
-    transition: all linear 0.2s;
-}
-.main-nav-bar a:active, .main-nav-bar a:hover, .main-nav-bar a:focus {
-/*    background-color: rgb(210,180,140);*/
-    background-color: rgb(154, 171, 185);
-    color: white;
-}
-/*A bandaid fix... otherwise, a element has background transition colour too, as specified in .main-nav-bar a*/
-.main-nav-bar .companyName:active, .main-nav-bar a.companyName:hover, .main-nav-bar a.companyName:focus {
-    background-color: white;
-}
-#main-nav-categories:hover > ul.main-nav-dropMenu li a{
-    flex: 1;
-    visibility: visible;
+
+.logo {
     display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: rgb(154, 171, 185);
+    font-size: 1.3rem;
+
+    border: 0.5rem solid rgb(154, 171, 185);
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
-li > ul.main-nav-dropMenu {
-    position: absolute;
+
+.nav-item-links {
+    margin: 0;
+    /* padding: 0; */
+    list-style: none;
+    align-items: center;
+    font-weight: normal;
 }
-#main-nav-categories > ul.main-nav-dropMenu li a{
+
+.nav-item-links > li {
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0;
+    height: auto;
     position: relative;
-    visibility: hidden;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    transition: all linear 0.3s;
 }
 
-@media (min-width:1144px) {
-    .main-nav-bar {
-        display: flex;
+    .nav-item-links > li > a:not(.logo-background):active,
+    .nav-item-links > li > a:not(.logo-background):hover,
+    .nav-item-links > li > a:not(.logo-background):focus{
+    /*				background: rgba(58,162,173,1);*/
+        background-color: rgb(154, 171, 185);
+/*        background-color: rgb(226, 180, 154);*/
+        color: #fff;
     }
-    .main-nav-bar ul{
-        display: flex;
-        align-items: center;
+    .logo-background:hover > .logo,
+    .logo-background:active > .logo,
+    .logo-background:focus > .logo {
+        border-color: rgb(82, 115, 142);
+        color: rgb(82, 115, 142);
     }
+
+.nav-item-links > li a + div {
+/*                dropdown menu: "bulbs"*/
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+/* 				border-radius: 0 0 0.2rem 0.2rem; */
+    box-shadow: 0 0.1rem 0.1rem 0 rgba(0,0,0,0.2);
+    font-size: 1rem;
 }
-/*END OF MAIN NAV*/
+
+    .nav-item-links > li:hover a + div {
+    /*                    aka when you hover over "bulbs", show the submenu*/
+        display: block;
+        z-index: 110;
+    }
+
+.nav-item-links > li a + div > .nav-dropdown {
+    list-style-type: none;
+}
+
+    .nav-item-links > li a + div > .nav-dropdown > li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-item-links > li a + div > .nav-dropdown > li > a {
+/*							the actual dropdown menu*/
+        display: block;
+        padding: 0.75rem 0.5rem;
+
+        color: #555;
+        font-size: 0.75rem;
+        letter-spacing: 0.08rem;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        -webkit-transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        transition: all ease 0.3s;
+    }
+
+        .nav-item-links > li a + div > .nav-dropdown > li:hover > a {
+/*                                hovering over a dropdown item*/
+            background-color: rgb(154, 171, 185);
+            color: #fff;
+        }
+
+.nav-item-links > li > a {
+/*                the anchor items on the menu*/
+    display: flex;
+    padding: 0.5rem 2rem;
+
+    color: #555;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+/*				text-shadow: 0 1px 1px rgba(0,0,0,.1);*/
+    text-transform: uppercase;
+    border-radius: 0.2rem;
+
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+    .nav-item-links > li > a.logo-background {
+        padding: 0 2rem;
+    }
+
+#nav-toggle {
+	display: block;
+    width: 100%;
+    padding: 1em 1.25em;
+    visibility: visible;
+
+	color: #000;
+	text-decoration: none;
+	text-align: left;
+
+    background-color: #ddd;
+    border: 0;
+
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+
+}
+
+    #nav-toggle:active,
+    #nav-toggle:hover,
+    #nav-toggle:focus {
+        background-color: #777;
+    }
+/* END OF NAV BAR --------------------------------------
+---------------------------------------------------------
+*/
 
 
 
@@ -203,9 +326,16 @@ li > ul.main-nav-dropMenu {
 
 
 
-/*IMPORTED ICON FOR "CATEGORIES" IN MAIN NAV*/
-.fa {
-    font-size:
+
+
+
+
+/* ICONS --------------------------------------
+---------------------------------------------------------
+*/
+/*IMPORTED ICON FOR "BULBS" IN MAIN NAV*/
+.fa .fa-angle-down{
+    font-size: 1rem;
 }
 
 
@@ -226,13 +356,28 @@ a.fa {
     text-align: center;
     text-decoration: none;
     color: rgb(154, 171, 185);
-    transition: all 0.3s ease;
+
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
 
 .fa:active, .fa:hover, .fa:focus {
     color: rgb(25, 52, 70);
 }
+/* END OF ICONS --------------------------------------
+---------------------------------------------------------
+*/
 
+
+
+
+
+
+
+/* FOOTER --------------------------------------
+---------------------------------------------------------
+*/
 .footer-list {
     display: block;
     list-style: none;
@@ -269,50 +414,34 @@ a.fa {
     text-align: center;
     text-transform: uppercase;
 
-    transition: all 0.3s ease;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
 .footer-list a:active, .footer-list a:hover, .footer-list a:focus {
     color: rgb(25, 52, 70);
 }
-/*END OF FOOTER STYLING*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*START: MY CART PAGE*/
-/*
-.myCart-form h3, .myCart-summary h3{
-    border: 0.2rem solid white;
-    text-align: left;
-}
+/* END OF FOOTER --------------------------------------
+---------------------------------------------------------
 */
-/*
-.myCart-form {
-    order: 2;
-}
-.myCart-summary {
-    order: 1;
-}
-@media (min-width: 901px) {
-    .myCart-form {
-        order: 2;
-    }
-    .myCart-summary {
-        order: 1;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MY CART PAGE --------------------------------------
+---------------------------------------------------------
 */
 .myCart-summary h3 {
     text-align: left;
@@ -321,6 +450,7 @@ a.fa {
     font-weight: bold;
     color: rgb(154, 171, 185);
     margin-top: 2rem;
+    position: fixed;
 }
 .myCart-summary ul{
     list-style: none;
@@ -340,7 +470,9 @@ a.fa {
 .myCart-summary .price {
     text-align: right;
 }
-/*END: MY CART PAGE*/
+/* END OF MY CART PAGE --------------------------------------
+---------------------------------------------------------
+*/
 
 
 
@@ -353,7 +485,9 @@ a.fa {
 
 
 
-/* Interactive elements */
+/* INTERACTIVE ELEMENTS --------------------------------------
+---------------------------------------------------------
+*/
 .button-submit {
     margin: 0;
     padding: 0.8rem;
@@ -368,10 +502,12 @@ a.fa {
     letter-spacing: 0.1rem;
 
     background-color: rgb(226, 180, 154);
-    -webkit-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
     box-shadow: none;
     border-radius: 0.2rem;
+
+    -webkit-transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    transition: all ease-out 0.5s;
 }
 .button-submit:active, .button-submit:hover, .button-submit:focus{
     background-color: rgb(183, 164, 154);
@@ -390,38 +526,25 @@ a.fa {
     text-decoration: none;
     letter-spacing: 0.1rem;
 
-/*  background-color: rgba(210,180,140,1);*/
-/*    background-color: rgb(226, 180, 154);*/
     background-color: #ddd;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
     box-shadow: none;
     border-radius: 0.2rem;
+
+    -webkit-transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    transition: all ease-out 0.5s;
 }
 .button-reset:active, .button-reset:hover, .button-reset:focus{
-/*    background-color: rgb(183, 164, 154);*/
     background-color: #eee;
     color: rgb(25, 52, 70);;
 }
-/*user text input is at the top of main.css*/
-/*
-.input-text {
-    margin: 0;
-    padding: 0.5rem;
-    background-color: rgb(226, 180, 154);
-    text-transform: uppercase;
-    color: white;
-    font-size: 1rem;
-    border-radius: 0.2rem;
-}
-.input-text-box {
-  width: 80%;
-}
-*/
 
 .unordered-list-interac-example {
   padding-bottom: 1rem;
 }
+/* END OF INTERACTIVE ELEMENTS --------------------------------------
+---------------------------------------------------------
+*/
 
 
 
@@ -434,12 +557,13 @@ a.fa {
 
 
 
-/*TEXT STYLING*/
-
+/* TEXT STYLING --------------------------------------
+---------------------------------------------------------
+*/
 .text-styling {
     list-style: none;
 }
-.h1-titles {
+/* .h1-titles {
     padding: 0.5rem 1rem;
     color: rgb(154, 171, 185);
     text-transform: uppercase;
@@ -448,7 +572,7 @@ a.fa {
     border: 0.5rem solid rgb(154, 171, 185);
     width: 10rem;
     max-height: 4rem;
-}
+} */
 
 .h2-headings {
     margin: 0;
@@ -487,8 +611,11 @@ a.fa {
     text-decoration: none;
     border-bottom: 0.1rem solid rgb(154, 171, 185);
     color: rgb(154, 171, 185);
-    transition: all linear 0.2s;
     font-weight: bold;
+
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
 .a-in-text:active, .a-in-text:hover, .a-in-text:focus{
 /*  color: black;*/
@@ -516,7 +643,9 @@ a.fa {
 /*    border-left: 0.2rem solid rgba(22, 143, 224,0.5);*/
     border-left: 0.2rem solid rgb(154, 171, 185);
 }
-/*END OF TEXT STYLING*/
+/* END OF TEXT STYLING --------------------------------------
+---------------------------------------------------------
+*/
 
 
 
@@ -529,7 +658,9 @@ a.fa {
 
 
 
-/*COLOUR SWATCHES*/
+/* COLOUR SWATCHES --------------------------------------
+---------------------------------------------------------
+*/
 .blue {
 /*    background-color: rgb(22, 143, 224);*/
     background-color: rgb(154, 171, 185);
@@ -549,90 +680,9 @@ a.fa {
 .coral p, .coralHover p {
     color: white;
 }
-/*END OF COLOUR SWATCHES*/
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-/*START OF MAIN NAV*/
-/*
-#menuToggle img{
-    display: flex;
-    justify-content: flex-end;
-    width: 1.5rem;
-    margin: 2rem;
-}
-#menuToggle input {
-    display: inline-block;
-}
+/* END OF COLOUR SWATCHES --------------------------------------
+---------------------------------------------------------
 */
-.main-nav-bar {
-    display: inline-block;
-/*    display: none;*/
-/*    visibility: hidden;*/
-    position: relative;
-    flex: 1 1 auto;
-    justify-content: center;
-    box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.1);
-}
-.main-nav-bar ul {
-    list-style: none;
-    text-transform: uppercase;
-    display: block;
-}
-.main-nav-bar a {
-    text-decoration: none;
-    color: rgb(73,45,9);
-    display: block;
-    padding: 1rem;
-    transition: all linear 0.2s;
-    border-radius: 0.2em;
-    background-color: white;
-}
-.main-nav-bar a:active, .main-nav-bar a:hover, .main-nav-bar a:focus {
-/*    background-color: rgb(210,180,140);*/
-    background-color: rgb(154, 171, 185);
-    color: white;
-}
-#main-nav-categories:hover > ul.main-nav-dropMenu li a{
-    flex: 1;
-    visibility: visible;
-    display: flex;
-}
-li > ul.main-nav-dropMenu {
-    position: absolute;
-}
-#main-nav-categories > ul.main-nav-dropMenu li a{
-    position: relative;
-    visibility: hidden;
-}
-
-@media (min-width:971px) {
-    #menuToggle {
-        display: none;
-    }
-    .main-nav-bar {
-        display: flex;
-    }
-    .main-nav-bar ul{
-        display: flex;
-    }
-}
-/*END OF MAIN NAV*/
-=======
-
-
-
->>>>>>> myCart
 
 
 
@@ -642,7 +692,11 @@ li > ul.main-nav-dropMenu {
 
 
 
-/*FIGURE STYLING*/
+
+
+/* FIGURE STYLING --------------------------------------
+---------------------------------------------------------
+*/
 figcaption {
     letter-spacing: 0.08rem;
 }
@@ -653,16 +707,19 @@ figcaption {
     margin-top: 1.5rem;
     padding: 0.5rem 1rem;
     display: inline-block;
+    width: 50%;
+
     color: white;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    width: 50%;
     border: none;
     border-radius: 0.2rem;
-   /* background-color: rgb(210,180,140); */
     background-color: rgb(226, 180, 154);
-    transition: background-color 0.3s ease;
+
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
 .button-buy:active, .button-buy:hover, .button-buy:focus {
     background-color: rgb(142, 114, 78);
@@ -692,27 +749,27 @@ figcaption {
 }
 
 .newSelection .col-40 .title-of-item {
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 .newSelection .col-40 .brief-description {
     font-size: 1rem;
 }
 
 .multiProductBannerItem .col-40 .title-of-item {
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 .multiProductBannerItem .brief-description {
     font-size: 1rem;
 }
 
 .singleProductShowcaseItem .col-40 .title-of-item {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .singleProductShowcaseItem .brief-description, .singleProductShowcaseItem .type-of-item, .singleProductShowcaseItem .item-reference {
     font-size: 0.75rem;
 }
 .singleProductShowcaseItem .price-tag {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin: 0.2rem;
 }
@@ -723,4 +780,6 @@ figcaption {
     letter-spacing: 0.1rem;
     margin: 0.2rem;
 }
-/*END OF FIGURE STYLING*/
+/* END OF FIGURE STYLING --------------------------------------
+---------------------------------------------------------
+*/
