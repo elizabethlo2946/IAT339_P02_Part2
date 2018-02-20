@@ -2,12 +2,12 @@
 BROWN:
 color: rgb(73,45,9);
 
-BLUE: 
+BLUE:
 rgb(154, 171, 185);
 BLUE ON HOVER:
 rgb(25, 52, 70);
 
-CORAL: 
+CORAL:
 rgb(226, 180, 154);
 CORAL ON HOVER:
 rgb(183, 164, 154);
@@ -16,42 +16,85 @@ TAN: rgb(210,180,140);
 */
 
 *, *::before, *::after {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 body {
-/*    font-family: 'Hind Siliguri', sans-serif;*/
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02rem;
     color: rgb(73,45,9);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 h2, h3, nav {
     font-weight: lighter;
     letter-spacing: 0.07em;
 }
 h4, ol, code {
-    margin: 3rem;
+    margin: 2rem 0;
     font-weight: lighter;
 }
 h1 {
     font-weight: lighter;
     letter-spacing: 0.3em;
     background-color: white;
-/*    margin: 3rem 0;*/
+    transition: all 0.3s ease;
+}
+h1:active, h1:hover, h1:focus {
+    color: rgb(25, 52, 70);
+    border-color: rgb(25, 52, 70);
 }
 h2 {
     color: rgb(154, 171, 185);
-    margin: 3rem 0;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     display: block;
-/*    color: white;*/
-/*    background-color: rgb(154, 171, 185);*/
-/*    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.1);*/
-/*    margin-top: 1.5rem;*/
-/*    border-radius: 0.2rem;*/
+    width: 100%;
+}
+h3 {
+    background-color: #eee;
+    padding: 2rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+h4 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #888;
 }
 section code {
     background-color: #eee;
     padding: 1rem;
     display: block;
+}
+
+/*User input text field*/
+input[type=text], select {
+    display: inline-block;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+form {
+    margin: 1rem 0;
+}
+form input {
+    font-size: 0.8rem;
+    letter-spacing: 0.03rem;
+    color: #777
+}
+label, select {
+    color: #888;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07rem;
+}
+select {
+    height: 2.5rem;
 }
 
 footer {
@@ -61,7 +104,272 @@ footer {
 
 
 
-/*START OF FOOTER STYLING FROM 
+
+
+
+
+
+/* Start of Jordan Yep credits
+taken from a classmate: Jordan Yep via jordanyep.com */
+.landing-img {
+   background-image: url(../img/landingimg.jpg);
+   /* Is there a way to create alts through this? */
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   width: 100%;
+   height: 60vh;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+    color: #272727;
+    letter-spacing: 0.9px;
+    text-align: center;
+
+}
+/* end of Jordan Yep credits */
+.landing-img-caption {
+   padding: 2rem;
+   background-color: rgba(255, 255, 255, 0.75);
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+
+
+
+
+
+
+header {
+    box-shadow: 0 0.1rem 0.1rem 0 rgba(0,0,0,.1);
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: rgb(154, 171, 185);
+    font-size: 1.3rem;
+
+    border: 0.5rem solid rgb(154, 171, 185);
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.nav-item-links {
+    margin: 0;
+    /* padding: 0; */
+    list-style: none;
+    align-items: center;
+    font-weight: normal;
+}
+
+.nav-item-links > li {
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    position: relative;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+    .nav-item-links > li > a:not(.logo-background):active,
+    .nav-item-links > li > a:not(.logo-background):hover,
+    .nav-item-links > li > a:not(.logo-background):focus{
+    /*				background: rgba(58,162,173,1);*/
+        background-color: rgb(154, 171, 185);
+/*        background-color: rgb(226, 180, 154);*/
+        color: #fff;
+    }
+    .logo-background:hover > .logo,
+    .logo-background:active > .logo,
+    .logo-background:focus > .logo {
+        border-color: rgb(82, 115, 142);
+        color: rgb(82, 115, 142);
+    }
+
+.nav-item-links > li a + div {
+/*                dropdown menu: "bulbs"*/
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+/* 				border-radius: 0 0 0.2rem 0.2rem; */
+    box-shadow: 0 0.1rem 0.1rem 0 rgba(0,0,0,0.2);
+    font-size: 1rem;
+}
+
+    .nav-item-links > li:hover a + div {
+    /*                    aka when you hover over "bulbs", show the submenu*/
+        display: block;
+        z-index: 110;
+    }
+
+.nav-item-links > li a + div > .nav-dropdown {
+    list-style-type: none;
+}
+
+    .nav-item-links > li a + div > .nav-dropdown > li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-item-links > li a + div > .nav-dropdown > li > a {
+/*							the actual dropdown menu*/
+        display: block;
+        padding: 0.75rem 0.5rem;
+
+        color: #555;
+        font-size: 0.75rem;
+        letter-spacing: 0.08rem;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        -webkit-transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        transition: all ease 0.3s;
+    }
+
+        .nav-item-links > li a + div > .nav-dropdown > li:hover > a {
+/*                                hovering over a dropdown item*/
+            background-color: rgb(154, 171, 185);
+            color: #fff;
+        }
+
+.nav-item-links > li > a {
+/*                the anchor items on the menu*/
+    display: flex;
+    padding: 0.5rem 2rem;
+
+    color: #555;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+/*				text-shadow: 0 1px 1px rgba(0,0,0,.1);*/
+    text-transform: uppercase;
+    border-radius: 0.2rem;
+
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+    .nav-item-links > li > a.logo-background {
+        padding: 0 2rem;
+    }
+
+#nav-toggle {
+	display: block;
+    width: 100%;
+    padding: 1em 1.25em;
+    visibility: visible;
+
+	color: #000;
+	text-decoration: none;
+	text-align: left;
+
+    background-color: #ddd;
+    border: 0;
+
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+
+}
+
+    #nav-toggle:active,
+    #nav-toggle:hover,
+    #nav-toggle:focus {
+        background-color: #777;
+    }
+/*START OF MAIN NAV*/
+/* .main-nav-bar {
+    display: inline-block;
+    position: relative;
+    flex: 1 1 auto;
+    justify-content: center;
+    box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.1);
+}
+.main-nav-bar ul {
+    list-style: none;
+    text-transform: uppercase;
+    display: block;
+}
+.main-nav-bar a {
+    text-decoration: none;
+    color: #555;
+    display: block;
+    padding: 1rem;
+    border-radius: 0.2em;
+    background-color: white;
+    transition: all linear 0.2s;
+}
+.main-nav-bar a:active, .main-nav-bar a:hover, .main-nav-bar a:focus {
+    background-color: rgb(154, 171, 185);
+    color: white;
+}
+/*A bandaid fix... otherwise, a element has background transition colour too, as specified in .main-nav-bar a*/
+.main-nav-bar .companyName:active, .main-nav-bar a.companyName:hover, .main-nav-bar a.companyName:focus {
+    background-color: white;
+}
+#main-nav-categories:hover > ul.main-nav-dropMenu li a{
+    flex: 1;
+    visibility: visible;
+    display: flex;
+}
+li > ul.main-nav-dropMenu {
+    position: absolute;
+}
+#main-nav-categories > ul.main-nav-dropMenu li a{
+    position: relative;
+    visibility: hidden;
+}
+
+@media (min-width:1144px) {
+    .main-nav-bar {
+        display: flex;
+    }
+    .main-nav-bar ul{
+        display: flex;
+        align-items: center;
+    }
+} */
+/*END OF MAIN NAV*/
+
+
+
+
+
+
+
+/*IMPORTED ICON FOR "CATEGORIES" IN MAIN NAV*/
+.fa {
+    font-size:
+}
+
+
+
+
+
+
+
+
+
+/*START OF FOOTER STYLING FROM
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons. Again, "fa" must be used in order to access the service listed in the <link> of the HTML <head> seciton
 */
 a.fa {
@@ -89,21 +397,31 @@ a.fa {
     letter-spacing: 0.2rem;
     color: #999;
     text-transform: uppercase;
+/*<<<<<<< HEAD*/
     padding: 0.3rem 0;
 }
 .footer-list li {
 /*    border-left: 0.05rem solid rgba(25, 52, 70, 0.4);*/
     padding: 0.8rem 0;
+/*=======*/
+    padding: 1rem 0;
+}
+.footer-list li {
+/*    border-bottom: 0.03rem solid rgba(25, 52, 70, 0.8);*/
+    padding: 1rem 0;
+/*>>>>>>> myCart*/
     text-align: center;
 }
 .footer-list a {
     border-bottom: 0.03rem solid rgba(25, 52, 70, 0.4);
     text-decoration: none;
+    border-bottom: 0.03rem solid rgba(25, 52, 70, 0.8);
     color: grey;
     font-size: 0.8rem;
     letter-spacing: 0.08rem;
     text-align: center;
     text-transform: uppercase;
+
     transition: all 0.3s ease;
 }
 .footer-list a:active, .footer-list a:hover, .footer-list a:focus {
@@ -117,17 +435,69 @@ a.fa {
 
 
 
-.landing-img{
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+
+
+
+
+
+
+
+
+
+/*START: MY CART PAGE*/
+/*
+.myCart-form h3, .myCart-summary h3{
+    border: 0.2rem solid white;
+    text-align: left;
 }
-.landing-img img{
-    width: 100%;
+*/
+/*
+.myCart-form {
+    order: 2;
 }
+.myCart-summary {
+    order: 1;
+}
+@media (min-width: 901px) {
+    .myCart-form {
+        order: 2;
+    }
+    .myCart-summary {
+        order: 1;
+    }
+}
+*/
+.myCart-summary h3 {
+    text-align: left;
+}
+.myCart-summary p {
+    font-weight: bold;
+    color: rgb(154, 171, 185);
+    margin-top: 2rem;
+}
+.myCart-summary ul{
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+}
+.myCart-summary li {
+    padding: 1.5rem 0;
+    border-bottom: 0.08rem solid rgba(154, 171, 185, 0.5);
+}
+.myCart-summary .item-name {
+    text-align: left;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+}
+.myCart-summary .price {
+    text-align: right;
+}
+/*END: MY CART PAGE*/
+
+
+
+
 
 
 
@@ -174,16 +544,20 @@ a.fa {
     letter-spacing: 0.1rem;
 
 /*  background-color: rgba(210,180,140,1);*/
-    background-color: rgb(226, 180, 154);
-    -webkit-transition: background-color, color 0.3s ease-out;
-    transition: background-color, color 0.3s ease-out;
+/*    background-color: rgb(226, 180, 154);*/
+    background-color: #ddd;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
     box-shadow: none;
     border-radius: 0.2rem;
 }
 .button-reset:active, .button-reset:hover, .button-reset:focus{
-    background-color: rgb(183, 164, 154);
+/*    background-color: rgb(183, 164, 154);*/
+    background-color: #eee;
+    color: rgb(25, 52, 70);;
 }
-
+/*user text input is at the top of main.css*/
+/*
 .input-text {
     margin: 0;
     padding: 0.5rem;
@@ -196,10 +570,15 @@ a.fa {
 .input-text-box {
   width: 80%;
 }
+*/
 
 .unordered-list-interac-example {
   padding-bottom: 1rem;
 }
+
+
+
+
 
 
 
@@ -213,7 +592,7 @@ a.fa {
 .text-styling {
     list-style: none;
 }
-.h1-titles {
+/* .h1-titles {
     padding: 0.5rem 1rem;
     color: rgb(154, 171, 185);
     text-transform: uppercase;
@@ -222,7 +601,7 @@ a.fa {
     border: 0.5rem solid rgb(154, 171, 185);
     width: 10rem;
     max-height: 4rem;
-}
+} */
 
 .h2-headings {
     margin: 0;
@@ -235,7 +614,7 @@ a.fa {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    
+
     background-color: white;
 /*    background-color: rgba(22, 143, 224,0.2);*/
 /*    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.3);*/
@@ -250,7 +629,7 @@ a.fa {
     font-size: 0.8rem;
     font-weight: bolder;
     letter-spacing: 0.2rem;
-    
+
     border-bottom: 0.1rem solid rgb(226, 180, 154);
 }
 .a-in-text {
@@ -330,16 +709,13 @@ a.fa {
 
 
 
-/*IMPORTED ICON FOR "CATEGORIES" IN MAIN NAV*/
-.fa {
-    font-size:
-}
 
 
 
 
 
 
+<<<<<<< HEAD
 /*START OF MAIN NAV*/
 /*
 #menuToggle img{
@@ -405,6 +781,11 @@ li > ul.main-nav-dropMenu {
     }
 }
 /*END OF MAIN NAV*/
+=======
+
+
+
+>>>>>>> myCart
 
 
 
@@ -424,12 +805,15 @@ figcaption {
 .button-buy {
     margin-top: 1.5rem;
     padding: 0.5rem 1rem;
+    display: inline-block;
     color: white;
     text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
     width: 50%;
     border: none;
     border-radius: 0.2rem;
-/*    background-color: rgb(210,180,140);*/
+   /* background-color: rgb(210,180,140); */
     background-color: rgb(226, 180, 154);
     transition: background-color 0.3s ease;
 }
@@ -437,6 +821,16 @@ figcaption {
     background-color: rgb(142, 114, 78);
     color: white;
 }
+/* .button-buy a:active, .button-buy a:hover, .button-buy a:focus {
+  color: white;
+} */
+/* .button-buy {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+} */
 .title-of-item {
     font-weight: bold;
     text-transform: uppercase;
@@ -450,4 +844,36 @@ figcaption {
     letter-spacing: 0.1rem;
 }
 
+.newSelection .col-40 .title-of-item {
+    font-size: 2rem;
+}
+.newSelection .col-40 .brief-description {
+    font-size: 1rem;
+}
+
+.multiProductBannerItem .col-40 .title-of-item {
+    font-size: 2rem;
+}
+.multiProductBannerItem .brief-description {
+    font-size: 1rem;
+}
+
+.singleProductShowcaseItem .col-40 .title-of-item {
+    font-size: 1.5rem;
+}
+.singleProductShowcaseItem .brief-description, .singleProductShowcaseItem .type-of-item, .singleProductShowcaseItem .item-reference {
+    font-size: 0.75rem;
+}
+.singleProductShowcaseItem .price-tag {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.2rem;
+}
+.singleProductShowcaseItem .type-of-item, .singleProductShowcaseItem .item-reference  {
+    color: #555;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 0.2rem;
+}
 /*END OF FIGURE STYLING*/
