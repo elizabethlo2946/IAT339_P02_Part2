@@ -9,8 +9,14 @@
 }
 /*each box*/
 .col {
-/*    background-color: #eee;*/
+   /* background-color: #eee; */
     margin: 1rem 0;
+}
+.col-space-between-paras {
+   margin: 2rem;
+}
+.col-space-between-buttons {
+   margin: 0.5rem;
 }
 
 
@@ -48,7 +54,7 @@
     justify-content: space-around;
 }
 .flex-grid-twos .col{
-    width: 49%;
+    width: 50%;
 }
 .flex-grid-footer {
     display: block;

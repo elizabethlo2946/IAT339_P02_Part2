@@ -76,6 +76,9 @@ section code {
     padding: 1rem;
     display: block;
 }
+section figure img {
+   width: 100%;
+}
 
 /*User input text field*/
 input[type=text], select {
@@ -95,7 +98,7 @@ form input {
 }
 label, select {
     color: #888;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.07rem;
@@ -444,14 +447,18 @@ a.fa {
 /* MY CART PAGE --------------------------------------
 ---------------------------------------------------------
 */
+/* .myCart-summary {
+   background-color: #fff;
+   position: fixed;
+} */
 .myCart-summary h3 {
     text-align: left;
 }
 .myCart-summary p {
-    font-weight: bold;
+    font-weight: normal;
     color: rgb(154, 171, 185);
     margin-top: 2rem;
-    position: fixed;
+    /* position: fixed; */
 }
 .myCart-summary ul{
     list-style: none;
@@ -466,7 +473,7 @@ a.fa {
 .myCart-summary .item-name {
     text-align: left;
     letter-spacing: 0.1rem;
-    font-weight: lighter;
+    font-weight: normal;
 }
 .myCart-summary .price {
     text-align: right;
