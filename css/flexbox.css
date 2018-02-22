@@ -18,6 +18,9 @@
 .col-space-between-buttons {
    margin: 0.5rem;
 }
+/* .col-space-between-fours {
+   margin-left: 0.3rem;
+} */
 
 
 
@@ -98,26 +101,29 @@
     margin-bottom: 1rem;
     display: block;
 }
-/* .flex-grid-fours {
+.flex-grid-fours {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .flex-grid-fours .col {
     width: 100%;
-} */
+}
 .flex-grid-row {
     margin-top: 2rem;
 }
-@media (min-width: 500px) {
-    .flex-grid-fours {
+@media (min-width: 389px) {
+    /* .flex-grid-fours {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         flex-direction: row;
-    }
-    .flex-grid-fours .col {
-        width: 50%;
+    } */
+    .flex-grid-fours .col{
+        width: 49%;
     }
 }
+
 @media (min-width: 900px) {
     .flex-grid-fours, .flex-grid-row {
         display: flex;
@@ -125,7 +131,7 @@
         flex-direction: row;
     }
     .flex-grid-fours .col {
-        width: 25%;
+        width: 24%;
     }
     .flex-grid-row {
         align-items: top;
