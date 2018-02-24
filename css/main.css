@@ -71,6 +71,9 @@ h4 {
     font-size: 0.8rem;
     color: #888;
 }
+a {
+   color: rgb(82, 115, 142);
+}
 section code {
     background-color: #eee;
     padding: 1rem;
@@ -164,11 +167,18 @@ taken from a classmate: Jordan Yep via jordanyep.com */
 
 }
 /* end of Jordan Yep credits */
-.landing-img-caption {
+.landing-img-caption a {
    padding: 2rem;
+   color: #333;
    background-color: rgba(255, 255, 255, 0.75);
    text-transform: uppercase;
    font-weight: normal;
+
+   transition: all ease 0.3s;
+}
+.landing-img-caption a:hover {
+   /* color: rgb(154, 171, 185); */
+   color: rgb(82, 115, 142);
 }
 /* END OF PARALLAX IMAGE --------------------------------------
 ---------------------------------------------------------
@@ -384,6 +394,8 @@ a.fa {
 .fa:active, .fa:hover, .fa:focus {
     color: rgb(25, 52, 70);
 }
+
+
 /* END OF ICONS --------------------------------------
 ---------------------------------------------------------
 */
@@ -582,7 +594,9 @@ a .responsive-image:hover {
     -moz-transition: all ease-out 0.5s;
     transition: all ease-out 0.5s;
 }
-.button-submit:active, .button-submit:hover, .button-submit:focus{
+.button-submit:active,
+.button-submit:hover,
+.button-submit:focus{
     background-color: rgb(183, 164, 154);
 }
 
@@ -607,9 +621,46 @@ a .responsive-image:hover {
     -moz-transition: all ease-out 0.5s;
     transition: all ease-out 0.5s;
 }
-.button-reset:active, .button-reset:hover, .button-reset:focus{
+.button-reset:active,
+.button-reset:hover,
+.button-reset:focus{
     background-color: #eee;
-    color: rgb(25, 52, 70);;
+    color: rgb(25, 52, 70);
+}
+
+/* EMOJI ICONS FOR THE "RATE US" PAGE */
+.button-emoji-rating {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   margin: 0.2rem 0;
+   padding: 1rem;
+   width: 90%;
+
+   color: #333;
+   text-transform: lowercase;
+   text-decoration: none;
+   text-align: left;
+   letter-spacing: 0.1rem;
+
+   background-color: #fff;
+   box-shadow: none;
+   border: none;
+   border-radius: 0.2rem;
+
+   -webkit-transition: all ease 0.3s;
+   -moz-transition: all ease 0.3s;
+   transition: all ease 0.3s;
+}
+.button-emoji-rating i {
+   margin-right: 1rem;
+}
+.button-emoji-rating:active,
+.button-emoji-rating:hover,
+.button-emoji-rating:focus {
+   /* background-color: rgb(183, 164, 154); */
+   background-color: rgb(226, 180, 154);
+   color: #fff;
 }
 
 .unordered-list-interac-example {
