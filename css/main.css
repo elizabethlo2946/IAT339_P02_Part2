@@ -437,8 +437,32 @@ a.fa {
     -moz-transition: all ease 0.3s;
     transition: all ease 0.3s;
 }
-.footer-list a:active, .footer-list a:hover, .footer-list a:focus {
+.footer-list a:active,
+.footer-list a:hover,
+.footer-list a:focus {
     color: rgb(25, 52, 70);
+}
+
+.copyrights, .copyrights a {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 1rem;
+   align-items: top;
+
+   font-size: 0.8rem;
+   text-align: center;
+   color: rgb(154, 171, 185);
+   text-decoration: none;
+
+   -webkit-transition: all ease 0.3s;
+   -moz-transition: all ease 0.3s;
+   transition: all ease 0.3s;
+}
+.copyrights a:active,
+.copyrights a:hover,
+.copyrights a:focus {
+   color: rgb(25, 52, 70);
 }
 /* END OF FOOTER --------------------------------------
 ---------------------------------------------------------
