@@ -18,9 +18,6 @@
 .col-space-between-buttons {
    margin: 0.5rem;
 }
-/* .col-space-between-fours {
-   margin-left: 0.3rem;
-} */
 
 
 
@@ -112,7 +109,7 @@
 .flex-grid-row {
     margin-top: 2rem;
 }
-@media (min-width: 389px) {
+@media (min-width: 412px) {
     /* .flex-grid-fours {
         display: flex;
         flex-wrap: wrap;
