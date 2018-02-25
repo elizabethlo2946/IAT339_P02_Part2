@@ -9,8 +9,14 @@
 }
 /*each box*/
 .col {
-/*    background-color: #eee;*/
+   /* background-color: #eee; */
     margin: 1rem 0;
+}
+.col-space-between-paras {
+   margin: 2rem;
+}
+.col-space-between-buttons {
+   margin: 0.5rem;
 }
 
 
@@ -35,7 +41,7 @@
 .flex-grid-nav {
     display: block;
 }
-@media (min-width:720px) {
+@media (min-width:1071px) {
     .flex-grid-nav {
 		display: flex;
 		flex-wrap: wrap;
@@ -44,12 +50,23 @@
 }
 
 .flex-grid-twos {
-    display: flex;
-    justify-content: space-around;
+   display: block;
+   /* justify-content: space-between; */
 }
-.flex-grid-twos .col{
-    width: 49%;
+.flex-grid-twos .col {
+   width: 100%;
 }
+@media (min-width:912px) {
+   .flex-grid-twos {
+       display: flex;
+       justify-content: space-around;
+   }
+   .flex-grid-twos .col{
+       width: 49%;
+   }
+
+}
+
 .flex-grid-footer {
     display: block;
     justify-content: space-between;
@@ -57,7 +74,7 @@
 .flex-grid-footer .col {
     width: 100%;
 }
-@media (min-width:500px) {
+@media (min-width:612px) {
     .flex-grid-footer {
         display: flex;
         justify-content: space-between;
@@ -81,26 +98,29 @@
     margin-bottom: 1rem;
     display: block;
 }
-/* .flex-grid-fours {
+.flex-grid-fours {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .flex-grid-fours .col {
     width: 100%;
-} */
+}
 .flex-grid-row {
     margin-top: 2rem;
 }
-@media (min-width: 500px) {
-    .flex-grid-fours {
+@media (min-width: 416px) {
+    /* .flex-grid-fours {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         flex-direction: row;
-    }
-    .flex-grid-fours .col {
-        width: 50%;
+    } */
+    .flex-grid-fours .col{
+        width: 49%;
     }
 }
+
 @media (min-width: 900px) {
     .flex-grid-fours, .flex-grid-row {
         display: flex;
@@ -108,7 +128,7 @@
         flex-direction: row;
     }
     .flex-grid-fours .col {
-        width: 25%;
+        width: 24%;
     }
     .flex-grid-row {
         align-items: top;
@@ -163,4 +183,12 @@
         text-align: right;
         margin-left: 1rem;
     }
+}
+.social-media {
+   display: flex;
+   flex-wrap: wrap;
+  justify-content: center;
+}
+.social-media .col {
+   justify-content: center;
 }
