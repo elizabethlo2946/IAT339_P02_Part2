@@ -9,16 +9,28 @@ var navToggle = document.querySelector("#nav-toggle");
 var navItems = document.querySelector("#nav-items");
 var navFirstItem = document.querySelector("#nav-items a");
 
-if (width < 1071) {
+window.addEventListener("resize",
+	function() {
+		width = window.innerWidth;
 
-	console.log("Window width is less than 1071px, collapsing menu.");
+		if (width < 1071) {
+			console.log("Window width is less than 1071px, collapsing menu.");
 
-   navToggle.classList.remove("hidden");
-   navToggle.setAttribute("aria-hidden", "false");
-   navItems.classList.add("hidden");
-   navItems.setAttribute("aria-hidden", "true");
-   navItems.setAttribute("aria-labelledby", "nav-toggle");
-}
+		   navToggle.classList.remove("hidden");
+		   navToggle.setAttribute("aria-hidden", "false");
+		   navItems.classList.add("hidden");
+		   navItems.setAttribute("aria-hidden", "true");
+		   navItems.setAttribute("aria-labelledby", "nav-toggle");
+		} else {
+
+			navToggle.classList.add("hidden");
+			navToggle.setAttribute("aria-hidden", "true");
+			navItems.classList.remove("hidden");
+			navItems.setAttribute("aria-hidden", "false");
+
+		}
+	}
+);
 
 navToggle.addEventListener("click",
    function() {
