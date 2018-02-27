@@ -18,9 +18,6 @@
 .col-space-between-buttons {
    margin: 0.5rem;
 }
-/* .col-space-between-fours {
-   margin-left: 0.3rem;
-} */
 
 
 
@@ -59,13 +56,13 @@
 .flex-grid-twos .col {
    width: 100%;
 }
-@media (min-width:612px) {
+@media (min-width:912px) {
    .flex-grid-twos {
        display: flex;
        justify-content: space-around;
    }
    .flex-grid-twos .col{
-       width: 50%;
+       width: 49%;
    }
 
 }
@@ -112,7 +109,7 @@
 .flex-grid-row {
     margin-top: 2rem;
 }
-@media (min-width: 389px) {
+@media (min-width: 416px) {
     /* .flex-grid-fours {
         display: flex;
         flex-wrap: wrap;

@@ -13,13 +13,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--        SOCIAL MEDIA ICONS for the footer-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- EMOJIs for the rating -->
+        <link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css"
     </head>
 
     <body>
 
 
       <header>
-            <!-- <button id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items">MENU</button> -->
+            <!-- start: menu button taken from Lab 7 -->
+            <button id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items">LAMPS MENU</button>
+            <!-- end: menu button taken from Lab 7 -->
             <nav id="nav-items">
                 <ul class="nav-item-links flex-grid-nav">
                     <li><a href="index.html" class="logo-background"><h1 class="logo">Lamps</h1></a></li>
@@ -44,42 +48,24 @@
 
 
 
-     <!-- <div class="flex-grid-container">
-        <section>
-           <h2>how satisfied are you with our services?</h2>
-           <form action="#">
-              <input type="radio" name="value" value="1" class="form-radio-answer"> 1<br />
-              <input type="radio" name="value" value="2" class="form-radio-answer"> 2<br />
-              <input type="radio" name="value" value="3" class="form-radio-answer"> 3<br />
-              <input type="radio" name="value" value="4" class="form-radio-answer"> 4<br />
-              <input type="radio" name="value" value="5" class="form-radio-answer"> 5<br />
-         </form>
-        </section>
-        <div class="flex-grid-twos">
-           <div class="col">
-               <h2>what did you like?</h2>
-               <textarea name="message" rows="10" cols="50"></textarea>
-           </div>
-           <div class="col">
-             <h2>what can we improve on?</h2>
-             <textarea name="message" rows="10" cols="50"></textarea>
-           </div>
-        </div>
-        <h2>any other additional comments?</h2>
-        <textarea name="message" rows="10" cols="50"></textarea>
-     </div> -->
-
      <div class="flex-grid-container">
         <div class="flex-grid-twos">
           <div class="col">
-            <h2>how satisfied are you with our services?</h2>
-            <form action="#">
-              <input type="radio" name="value" value="1" class="form-radio-answer"> 1<br />
-              <input type="radio" name="value" value="2" class="form-radio-answer"> 2<br />
-              <input type="radio" name="value" value="3" class="form-radio-answer"> 3<br />
-              <input type="radio" name="value" value="4" class="form-radio-answer"> 4<br />
-              <input type="radio" name="value" value="5" class="form-radio-answer"> 5<br />
-            </form>
+             <section>
+               <h2>how satisfied are you with our services?</h2>
+               <button type="button" class="button-emoji-rating"><i class="em em-angry"></i>NOT impressed at all!</button>
+               <button type="button" class="button-emoji-rating"><i class="em em-anguished"></i> Not exactly what I expected...</button>
+               <button type="button" class="button-emoji-rating"><i class="em em-no_mouth"></i> It's alright</button>
+               <button type="button" class="button-emoji-rating"><i class="em em-grin"></i> I'm satisfied!</button>
+               <button type="button" class="button-emoji-rating"><i class="em em-heart_eyes"></i> Flawless!</button>
+               <!-- <form action="#">
+                 <input type="radio" name="value" value="1" class="form-radio-answer"> 1<br />
+                 <input type="radio" name="value" value="2" class="form-radio-answer"> 2<br />
+                 <input type="radio" name="value" value="3" class="form-radio-answer"> 3<br />
+                 <input type="radio" name="value" value="4" class="form-radio-answer"> 4<br />
+                 <input type="radio" name="value" value="5" class="form-radio-answer"> 5<br />
+               </form> -->
+             </section>
           </div>
           <div class="col">
                <h2>what did you like?</h2>
@@ -141,7 +127,21 @@
                      <a href="#" class="fa fa-instagram"></a>
                  </div>
             </div>
+            <div class=" flex-grid-threes copyrights">
+               <div class="col">
+                  <p>
+                     Created by Elizabeth Lo and Abel Abraham in February 2018.
+                  </p>
+               </div>
+               <div class="col">
+                  <a href="citations.html">Citations</a>
+               </div>
+               <div class="col">
+                  <a href="styleguide.html">Styleguide</a>
+               </div>
+            </div>
 <!--            </div>-->
      </footer>
+     <script src="js/navCollapse.js"></script>
   </body>
 </html>
