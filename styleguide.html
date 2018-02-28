@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>LAMPS Styleguide</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/flexbox.css">
+
+      <!-- THE ICON for "bulbs" in nav bar -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+
+   <body>
+      <header id="styleguide">
+         <!-- start: menu button taken from Lab 7 -->
+         <button id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items">LAMPS MENU</button>
+         <!-- end: menu button taken from Lab 7 -->
+         <nav id="nav-items">
+            <ul class="nav-item-links flex-grid-nav">
+               <li>
+                  <a href="index.html" class="logo-background"><h1 class="logo">Lamps</h1></a>
+               </li>
+               <li>
+                  <a href="#interactive-elements"><div class="col">Interactive elements</div></a>
+               </li>
+               <li>
+                  <a href="#text-styling"><div class="col">Text styling</div></a>
+               </li>
+               <li>
+                  <a href="#combined-elements"><div class="col">Combined Elements</div></a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+
+
+
+
+
+
+
+
+
+      <section id="interactive-elements">
+         <div class="flex-grid-twos">
+            <h1 class="logo">Interactive Elements</h1>
+         </div>
+            <div class="flex-grid-container">
+               <h2>landing image and in-text link</h2>
+               <div class="flex-grid">
+                  <div class="landing-img">
+                     <p class="landing-img-caption">
+                        <a href="multiProduct.html">Featuring the Nujabes collection this season</a>
+                     </p>
+                  </div>
+               </div>
+               <div class="flex-grid-twos">
+                  <div class="col">
+                     <h3>CSS Selectors</h3>
+                     <ul>
+                        <li>
+                           .landing-img
+                        </li>
+                        <li>
+                           .landing-img-caption
+                        </li>
+                        <li>
+                           .landing-img-caption a
+                        </li>
+                        <li>
+                           .landing-img-caption a:active,<br />
+                           .landing-img-caption a:hover,<br />
+                           .landing-img-caption a:focus
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col">
+                     <h3>HTML Code</h3>
+                     <code>
+                        &lt;div class="flex-grid"><br />
+                        &lt;div class="landing-img"><br />
+                        &lt;p class="landing-img-caption">&lt;a href="multiProduct.html">Featuring the Nujabes collection this season&lt;/a><br />
+                        &lt;/p><br />
+                        &lt;/div><br />
+                        &lt;/div><br />
+                     </code>
+               </div>
+            </div>
+      </section>
+
+
+
+
+
+
+
+
+      <section class="flex-grid-container">
+         <h2>text input and label</h2>
+         <div class="flex-grid-twos">
+            <div class="col">
+               <form method="post" action="#">
+               <label for="form-email">E-mail:</label>
+               <input type="text" id="form-email" placeholder="lamps.furniture@lamps.com">
+               </form>
+            </div>
+            <div class="col"></div>
+         </div>
+         <div class="flex-grid-twos">
+            <div class="col">
+               <h3>CSS text input selectors</h3>
+               <ul>
+                  <li>
+                     input[type=text], select
+                  </li>
+                  <li>
+                     form
+                  </li>
+                  <li>
+                     form input
+                  </li>
+                  <li>
+                     label, select
+                  </li>
+                  <li>
+                     select
+                  </li>
+               </ul>
+            </div>
+            <div class="col">
+               <h3>HTML text input code</h3>
+               <code>
+                  &lt;form method="post" action="#"><br />
+                  &lt;label for="form-email">E-mail:&lt;/label><br />
+                  &lt;input type="text" id="form-name" placeholder="lamps.furniture@lamps.com"><br />
+                  &lt;/form>
+               </code>
+            </div>
+         </div>
+      </section>
+
+
+
+
+
+      <section class="flex-grid-container">
+         <h2>submit and reset buttons</h2>
+         <div class="flex-grid-twos">
+            <div class="col">
+               <a class="button-reset" href="#">Reset</a>
+            </div>
+            <div class="col-space-between-buttons"></div>
+            <div class="col">
+               <a class="button-submit" href="rateUs.html">Submit</a>
+            </div>
+         </div>
+         <div class="flex-grid-twos">
+            <div class="col">
+               <h3>CSS button selectors</h3>
+               <ul>
+               <li>
+               .button-submit
+               </li>
+               <li>
+               .button-submit:active,<br />
+               .button-submit:hover,<br />
+               .button-submit:focus
+               </li>
+               <li>
+               .button-reset
+               </li>
+               <li>
+               .button-reset:active,<br />
+               .button-reset:hover,<br />
+               .button-reset:focus
+               </li>
+               </ul>
+            </div>
+            <div class="col">
+               <h3>HTML button code</h3>
+               <code>
+                  &lt;div class="flex-grid-twos"><br />
+                     &lt;div class="col"><br />
+                        &lt;a class="button-reset" href="#">Reset&lt;/a><br />
+                     &lt;/div><br />
+                     &lt;div class="col-space-between-buttons">&lt;/div><br />
+                     &lt;div class="col"><br />
+                        &lt;a class="button-submit" href="rateUs.html">Submit&lt;/a><br />
+                     &lt;/div><br />
+                  &lt;/div>
+               </code>
+            </div>
+         </div>
+      </section>
+
+
+
+
+
+
+
+
+      <section class="flex-grid-container">
+         <div class="flex-grid-twos">
+            <h1 id="text-styling" class="logo">Text Styling</h1>
+         </div>
+         <h2>three levels of headings</h2>
+         <div class="flex-grid-twos">
+            <div class="col">
+               <h1 class="logo">Heading 1</h1>
+               <h2>Heading 2</h2>
+               <h3>Heading 3</h3>
+            </div>
+            <div class="col">
+               <h3>CSS heading selectors</h3>
+               <ul>
+                  <li>
+                     h1
+                  </li>
+                  <li>
+                     .logo
+                  </li>
+                  <li>
+                     h2
+                  </li>
+                  <li>
+                     h3
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <h3>HTML code for headings</h3>
+         <code>
+            &lt;div class="flex-grid-twos"><br />
+            &lt;div class="col"><br />
+            &lt;h1 class="logo">Heading 1&lt;/h1><br />
+            &lt;h2>Heading 2&lt;/h2><br />
+            &lt;h3>Heading 3&lt;/h3><br />
+            &lt;/div>
+            &lt;/div>
+         </code>
+      </section>
+
+
+
+
+
+      <section class="flex-grid-container">
+         <h2>paragraph styling</h2>
+         <div class="flex-grid-twos">
+            <div class="col">
+               <h3>Example</h3>
+               <p>
+               We value local interior designers in Vancouver, as we understand that it is hard to get known or noticed without a special network. We hope that by caring for the new emerging interior designers, we will be able to move towards a more sustainable city where resources can be easily reused.
+               </p>
+            </div>
+            <div class="col"></div>
+         </div>
+         <div class="flex-grid-twos">
+            <div class="col">
+               <h3>CSS paragraph selectors</h3>
+               <ul>
+                  <li>
+                     p
+                  </li>
+               </ul>
+            </div>
+            <div class="col">
+               <h3>HTML code for paragraphs</h3>
+               <code>
+                  &lt;p&gt;
+               </code>
+            </div>
+         </div>
+      </section>
+
+
+      <section class="flex-grid-container">
+         <h2>bulleted lists: not used in our site, aside from nav</h2>
+         <ul>
+            <li>
+               item 1
+            </li>
+            <li>
+               item 2
+            </li>
+            <li>
+               item 3
+            </li>
+         </ul>
+         <div class="flex-grid-twos">
+            <div class="col">
+               <h3>CSS ul selectors</h3>
+               <ul>
+                  <li>
+                     ul
+                  </li>
+                  <li>
+                     li
+                  </li>
+               </ul>
+            </div>
+            <div class="col">
+               <h3>HTML ul code</h3>
+               <code>
+                  &lt;ul&gt;<br /> &lt;li&gt;<br /> item 1<br /> &lt;/li&gt;<br /> &lt;li&gt;<br /> item 2<br /> &lt;/li&gt;<br /> &lt;li&gt;<br /> item 3<br /> &lt;/li&gt;<br /> &lt;/ul&gt;
+               </code>
+            </div>
+         </div>
+      </section>
+
+
+
+      <section class="flex-grid-container">
+         <h2>numbered lists: not used in our site; table is used instead, look in combined elements section</h2>
+         <ol>
+            <li>
+               item 1
+            </li>
+            <li>
+               item 2
+            </li>
+            <li>
+               item 3
+            </li>
+         </ol>
+         <div class="flex-grid-twos">
+            <div class="col">
+               <h3>CSS ol selectors</h3>
+               <ul>
+                  <li>
+                     ol
+                  </li>
+                  <li>
+                     li
+                  </li>
+               </ul>
+            </div>
+            <div class="col">
+               <h3>HTML ol code</h3>
+               <code>
+                  &lt;ol&gt;<br /> &lt;li&gt;<br /> item 1<br /> &lt;/li&gt;<br /> &lt;li&gt;<br /> item 2<br /> &lt;/li&gt;<br /> &lt;li&gt;<br /> item 3<br /> &lt;/li&gt;<br /> &lt;/ol&gt;
+               </code>
+            </div>
+         </div>
+      </section>
+
+
+
+
+
+
+      <section class="flex-grid-container">
+         <div class="flex-grid-twos">
+            <h1 id="combined-elements" class="logo">Combined Elements</h1>
+         </div>
+         <h2>colour swatches</h2>
+         <section class="flex-grid-fours">
+            <div class="col">
+               <h4>Primary</h4>
+               <div id="colour-swatch1" class="circle"></div>
+               <h4>
+                  rgb(154, 171, 185);
+               </h4>
+            </div>
+            <div class="col">
+               <h4>Primary: on Hover</h4>
+               <div id="colour-swatch2" class="circle"></div>
+               <h4>
+                  rgb(25, 52, 70);
+               </h4>
+            </div>
+            <div class="col">
+               <h4>Secondary</h4>
+               <div id="colour-swatch3" class="circle"></div>
+               <h4>
+                  rgb(226, 180, 154);
+               </h4>
+            </div>
+            <div class="col">
+               <h4>Secondary: on Hover</h4>
+               <div id="colour-swatch4" class="circle"></div>
+               <h4>
+                  rgb(183, 164, 154);
+               </h4>
+            </div>
+         </section>
+      </section>
+
+
+
+
+
+      <section class="flex-grid-container">
+            <h2>navigation styling and HTML</h2>
+            <p>
+               The rendered element is used on the styleguide's main navigation.
+            </p>
+            <div class="flex-grid-twos">
+         <div class="col">
+            <h3>navigation CSS selectors</h3>
+            <ul>
+               <li>
+                  header
+               </li>
+               <li>
+                  .logo
+               </li>
+               <li>
+                  .nav-item-links
+               </li>
+               <li>
+                  nav-item-links > li
+               </li>
+               <li>
+                  .nav-item-links > li > a:not(.logo-background):active,<br />
+                  .nav-item-links > li > a:not(.logo-background):hover,<br />
+                  .nav-item-links > li > a:not(.logo-background):focus
+               </li>
+               <li>
+                  .logo-background:hover > .logo,<br />
+                  .logo-background:active > .logo,<br />
+                  .logo-background:focus > .logo
+               </li>
+               <li>
+                  .nav-item-links > li a + div
+               </li>
+               <li>
+                  .nav-item-links > li:hover a + div
+               </li>
+               <li>
+                  .nav-item-links > li a + div > .nav-dropdown
+               </li>
+               <li>
+                  .nav-item-links > li a + div > .nav-dropdown > li
+               </li>
+               <li>
+                  .nav-item-links > li a + div > .nav-dropdown > li > a
+               </li>
+               <li>
+                  .nav-item-links > li a + div > .nav-dropdown > li:hover > a
+               </li>
+               <li>
+                  .nav-item-links > li > a
+               </li>
+               <li>
+                  .nav-item-links > li > a.logo-background
+               </li>
+               <li>
+                  #nav-toggle
+               </li>
+               <li>
+                  #nav-toggle:active,<br />
+                  #nav-toggle:hover,<br />
+                  #nav-toggle:focus
+               </li>
+               <li>
+                  #nav-items a
+               </li>
+               <li>
+                  #nav-toggle.hidden, #nav-items.hidden
+               </li>
+            </ul>
+         </div>
+         <div class="col">
+            <h3>HTML nav code</h3>
+            <code>
+               &lt;header id="styleguide"><br />
+               <!-- start: menu button taken from Lab 7 -->
+               &lt;button id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items">LAMPS MENU&lt;/button><br />
+               <!-- end: menu button taken from Lab 7 -->
+                  &lt;nav id="nav-items"><br />
+                     &lt;ul class="nav-item-links flex-grid-nav"><br />
+                        &lt;li><br />
+                           &lt;a href="index.html" class="logo-background">&lt;h1 class="logo">Lamps&lt;/h1>&lt;/a><br />
+                        &lt;/li><br />
+                        &lt;li><br />
+                           &lt;a href="#interactive-elements">&lt;div class="col">Interactive elements&lt;/div>&lt;/a><br />
+                        &lt;/li><br />
+                        &lt;li><br />
+                           &lt;a href="multiProduct.html">&lt;div class="col">Text styling&lt;/div>&lt;/a><br />
+                        &lt;/li><br />
+                        &lt;li><br />
+                           &lt;a href="multiProduct.html">&lt;div class="col">Combined Elements&lt;/div>&lt;/a><br />
+                        &lt;/li><br />
+                     &lt;/ul><br />
+                  &lt;/nav><br />
+               &lt;/header><br />
+            </code>
+         </div>
+      </section>
+
+
+
+
+      <section class="flex-grid-container">
+         <h2>multiple item listing (4 column)</h2>
+         <section>
+            <h2>popular items this month</h2>
+            <div class="flex-grid-fours">
+               <div class="col">
+                  <figure class="multi-prod-item">
+                     <a href="singleProduct.html"><img src="img/bulb1.jpg" srcset="img/bulb1.jpg 2x, img/bulb1.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"></a>
+                     <figcaption>
+                        <span class="title-of-item">Hevlo</span><br>
+                        <span class="brief-description">Lightbulb, Lighting</span><br>
+                        $19<br>
+                        <a class="button-view" href="singleProduct.html">view</a>
+                     </figcaption>
+                  </figure>
+               </div>
+
+               <div class="col">
+                  <figure class="multi-prod-item">
+                     <a href="singleProduct.html"><img src="img/lamp11.jpg" srcset="img/lamp11.jpg 2x, img/lamp11.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"></a>
+                     <figcaption>
+                        <span class="title-of-item">Aran</span><br>
+                        <span class="brief-description">Lamp, Lighting</span><br>
+                        $375<br>
+                        <a class="button-view" href="singleProduct.html">view</a>
+                     </figcaption>
+                  </figure>
+               </div>
+
+
+               <div class="col">
+                  <figure class="multi-prod-item">
+                     <a href="singleProduct.html"><img src="img/bulb3.jpg" srcset="img/bulb3.jpg 2x, img/bulb3.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"></a>
+                     <figcaption>
+                        <span class="title-of-item">Fleura</span><br>
+                        <span class="brief-description">Lightbulb, Lighting</span><br>
+                        $32<br>
+                        <a class="button-view" href="singleProduct.html">view</a>
+                     </figcaption>
+                  </figure>
+               </div>
+
+
+               <div class="col">
+                  <figure class="multi-prod-item">
+                     <a href="singleProduct.html"><img src="img/lamp5.jpg" srcset="img/lamp5.jpg 2x, img/lamp5.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"></a>
+                     <figcaption>
+                        <span class="title-of-item">Dequino</span><br>
+                        <span class="brief-description">Lamp, Lighting</span><br>
+                        $59<br>
+                        <a class="button-view" href="singleProduct.html">view</a>
+                     </figcaption>
+                  </figure>
+               </div>
+            </div>
+         </section>
+         <div class="flex-grid-twos">
+            <div class="col">
+               <h3>CSS multi prod selectors</h3>
+               <ul>
+                  <li>
+                     .flex-grid-fours
+                  </li>
+                  <li>
+                     .col
+                  </li>
+                  <li>
+                     .multi-prod-item
+                  </li>
+                  <li>
+                     .title-of-item
+                  </li>
+                  <li>
+                     .brief-description
+                  </li>
+                  <li>
+                     figcaption
+                  </li>
+               </ul>
+            </div>
+            <div class="col"></div>
+         </div>
+         <h3>HTML multi prod code</h3>
+         <code>
+            <p>&lt;section&gt;<br /> &lt;h2&gt;popular items this month&lt;/h2&gt;<br /> &lt;div class="flex-grid-fours"&gt;<br /> &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/bulb1.jpg" srcset="img/bulb1.jpg 2x, img/bulb1.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Hevlo&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lightbulb, Lighting&lt;/span&gt;&lt;br&gt;<br /> $19&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;</p>
+            <p>&lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/lamp11.jpg" srcset="img/lamp11.jpg 2x, img/lamp11.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Aran&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lamp, Lighting&lt;/span&gt;&lt;br&gt;<br /> $375&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;</p>
+            <p><br /> &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/bulb3.jpg" srcset="img/bulb3.jpg 2x, img/bulb3.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Fleura&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lightbulb, Lighting&lt;/span&gt;&lt;br&gt;<br /> $32&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;</p>
+            <p><br /> &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/lamp5.jpg" srcset="img/lamp5.jpg 2x, img/lamp5.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Dequino&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lamp, Lighting&lt;/span&gt;&lt;br&gt;<br /> $59&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;/section&gt;</p>
+         </code>
+      </section>
+
+
+
+
+
+      <section class="flex-grid-container">
+         <h2>"my cart" summary uses a 6:4 width</h2>
+         <div class="flex-grid-row">
+            <div class="col-60">
+               <h3>HTML summary code</h3>
+               <code>
+                  &lt;div class="flex-grid-row"&gt;<br /> &lt;div class="col-60"&gt;<br /> &lt;h3&gt;Rendered Example &amp;gt;&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col-40"&gt;<br /> &lt;section class="myCart-summary"&gt;<br /> &lt;h3&gt;Summary&lt;/h3&gt;<br /> &lt;table class="item-name"&gt;<br /> &lt;tr&gt;<br /> &lt;td&gt;Quavo&lt;/td&gt;<br /> &lt;td class="table-right"&gt;$315&lt;/td&gt;<br /> &lt;/tr&gt;<br /> &lt;tr&gt;<br /> &lt;td&gt;Aran&lt;/td&gt;<br /> &lt;td class="table-right"&gt;$375&lt;/td&gt;<br /> &lt;/tr&gt;<br /> &lt;tr&gt;<br /> &lt;td&gt;Aran&lt;/td&gt;<br /> &lt;td class="table-right"&gt;$375&lt;/td&gt;<br /> &lt;/tr&gt;<br /> &lt;tr class="total"&gt;<br /> &lt;td&gt;Total&lt;/td&gt;<br /> &lt;td class="table-right"&gt;$1069&lt;/td&gt;<br /> &lt;/tr&gt;<br /> &lt;/table&gt;<br /> &lt;div class="flex-grid-twos"&gt;<br /> &lt;div class="col"&gt;<br /> &lt;a class="button-reset" href="#"&gt;Reset&lt;/a&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col-space-between-buttons"&gt;&lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;a class="button-submit" href="rateUs.html"&gt;Submit&lt;/a&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;/section&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;
+               </code>
+            </div>
+            <div class="col-40">
+               <section class="myCart-summary">
+                  <h3>Summary</h3>
+                  <table class="item-name">
+                     <tr>
+                        <td>Quavo</td>
+                        <td class="table-right">$315</td>
+                     </tr>
+                     <tr>
+                        <td>Aran</td>
+                        <td class="table-right">$375</td>
+                     </tr>
+                     <tr>
+                        <td>Aran</td>
+                        <td class="table-right">$375</td>
+                     </tr>
+                     <tr class="total">
+                        <td>Total</td>
+                        <td class="table-right">$1069</td>
+                     </tr>
+                  </table>
+                  <div class="flex-grid-twos">
+                     <div class="col">
+                        <a class="button-reset" href="#">Reset</a>
+                     </div>
+                     <div class="col-space-between-buttons"></div>
+                     <div class="col">
+                        <a class="button-submit" href="rateUs.html">Submit</a>
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </div>
+         <div class="flex-grid-row">
+            <div class="col-60">
+               <h3>CSS summary selectors</h3>
+               <ul>
+                  <li>
+                     .myCart-summary h3
+                  </li>
+                  <li>
+                     .myCart-summary p
+                  </li>
+                  <li>
+                     .myCart-summary .item-name
+                  </li>
+                  <li>
+                     .myCart-summary
+                  </li>
+                  <li>
+                     table
+                  </li>
+                  <li>
+                     td
+                  </li>
+                  <li>
+                     .table-right
+                  </li>
+                  <li>
+                     .total
+                  </li>
+               </ul>
+            </div>
+            <div class="col-40"></div>
+         </div>
+      </section>
+
+
+
+      <section class="flex-grid-container">
+         <h2>grid structure</h2>
+      </section>
+      <section class="flex-grid-container">
+         <div class="col">
+            <h3>90% width</h3>
+         </div>
+         <div class="flex-grid-row">
+            <div class="col-60">
+               <h3>60% width</h3>
+            </div>
+            <div class="col-40">
+               <h3>40% width</h3>
+            </div>
+         </div>
+         <div class="flex-grid-twos">
+            <div class="col">
+               <h3>49% width</h3>
+            </div>
+            <div class="col">
+               <h3>49% width</h3>
+            </div>
+         </div>
+         <div class="flex-grid-threes">
+            <div class="col">
+               <h3>33% width</h3>
+            </div>
+            <div class="col">
+               <h3>33% width</h3>
+            </div>
+            <div class="col">
+               <h3>33% width</h3>
+            </div>
+         </div>
+         <div class="flex-grid-fours">
+            <div class="col">
+               <h3>24% width</h3>
+            </div>
+            <div class="col">
+               <h3>24% width</h3>
+            </div>
+            <div class="col">
+               <h3>24% width</h3>
+            </div>
+            <div class="col">
+               <h3>24% width</h3>
+            </div>
+         </div>
+
+         <div class="flex-grid-twos">
+            <div class="col">
+               <h3>CSS grid selectors</h3>
+               <ul>
+                  <li>
+                     .flex-grid
+                  </li>
+                  <li>
+                     .col
+                  </li>
+                  <li>
+                     .flex-grid .col
+                  </li>
+                  <li>
+                     .flex-grid-container
+                  </li>
+                  <li>
+                     .flex-grid-twos
+                  </li>
+                  <li>
+                     .flex-grid-twos .col
+                  </li>
+                  <li>
+                     .flex-grid-threes
+                  </li>
+                  <li>
+                     .flex-grid-threes .col
+                  </li>
+                  <li>
+                     .flex-grid-fours
+                  </li>
+                  <li>
+                     .flex-grid-fours .col
+                  </li>
+                  <li>
+                     .flex-grid-row
+                  </li>
+                  <li>
+                     .flex-grid-row .col-60
+                  </li>
+                  <li>
+                     .flex-grid-row .col-40
+                  </li>
+               </ul>
+            </div>
+            <div class="col">
+               <h3>HTML grid code</h3>
+               <code>
+                  <p>&lt;div class="col"&gt;<br /> &lt;h3&gt;90% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="flex-grid-row"&gt;<br /> &lt;div class="col-60"&gt;<br /> &lt;h3&gt;60% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col-40"&gt;<br /> &lt;h3&gt;40% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;div class="flex-grid-twos"&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;49% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;49% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;div class="flex-grid-threes"&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;33% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;33% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;33% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;div class="flex-grid-fours"&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;24% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;24% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;24% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;24% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;</p>
+               </code>
+            </div>
+         </div>
+      </section>
+
+
+
+
+
+
+      <script src="js/navCollapse.js"></script>
+   </body>
+</html>
