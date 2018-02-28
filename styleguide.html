@@ -87,6 +87,7 @@
                         &lt;/div><br />
                         &lt;/div><br />
                      </code>
+                  </div>
                </div>
             </div>
       </section>
@@ -395,101 +396,82 @@
 
 
       <section class="flex-grid-container">
-            <h2>navigation styling and HTML</h2>
-            <p>
-               The rendered element is used on the styleguide's main navigation.
-            </p>
-            <div class="flex-grid-twos">
-         <div class="col">
-            <h3>navigation CSS selectors</h3>
-            <ul>
-               <li>
-                  header
-               </li>
-               <li>
-                  .logo
-               </li>
-               <li>
-                  .nav-item-links
-               </li>
-               <li>
-                  nav-item-links > li
-               </li>
-               <li>
-                  .nav-item-links > li > a:not(.logo-background):active,<br />
-                  .nav-item-links > li > a:not(.logo-background):hover,<br />
-                  .nav-item-links > li > a:not(.logo-background):focus
-               </li>
-               <li>
-                  .logo-background:hover > .logo,<br />
-                  .logo-background:active > .logo,<br />
-                  .logo-background:focus > .logo
-               </li>
-               <li>
-                  .nav-item-links > li a + div
-               </li>
-               <li>
-                  .nav-item-links > li:hover a + div
-               </li>
-               <li>
-                  .nav-item-links > li a + div > .nav-dropdown
-               </li>
-               <li>
-                  .nav-item-links > li a + div > .nav-dropdown > li
-               </li>
-               <li>
-                  .nav-item-links > li a + div > .nav-dropdown > li > a
-               </li>
-               <li>
-                  .nav-item-links > li a + div > .nav-dropdown > li:hover > a
-               </li>
-               <li>
-                  .nav-item-links > li > a
-               </li>
-               <li>
-                  .nav-item-links > li > a.logo-background
-               </li>
-               <li>
-                  #nav-toggle
-               </li>
-               <li>
-                  #nav-toggle:active,<br />
-                  #nav-toggle:hover,<br />
-                  #nav-toggle:focus
-               </li>
-               <li>
-                  #nav-items a
-               </li>
-               <li>
-                  #nav-toggle.hidden, #nav-items.hidden
-               </li>
-            </ul>
-         </div>
-         <div class="col">
-            <h3>HTML nav code</h3>
-            <code>
-               &lt;header id="styleguide"><br />
-               <!-- start: menu button taken from Lab 7 -->
-               &lt;button id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items">LAMPS MENU&lt;/button><br />
-               <!-- end: menu button taken from Lab 7 -->
-                  &lt;nav id="nav-items"><br />
-                     &lt;ul class="nav-item-links flex-grid-nav"><br />
-                        &lt;li><br />
-                           &lt;a href="index.html" class="logo-background">&lt;h1 class="logo">Lamps&lt;/h1>&lt;/a><br />
-                        &lt;/li><br />
-                        &lt;li><br />
-                           &lt;a href="#interactive-elements">&lt;div class="col">Interactive elements&lt;/div>&lt;/a><br />
-                        &lt;/li><br />
-                        &lt;li><br />
-                           &lt;a href="multiProduct.html">&lt;div class="col">Text styling&lt;/div>&lt;/a><br />
-                        &lt;/li><br />
-                        &lt;li><br />
-                           &lt;a href="multiProduct.html">&lt;div class="col">Combined Elements&lt;/div>&lt;/a><br />
-                        &lt;/li><br />
-                     &lt;/ul><br />
-                  &lt;/nav><br />
-               &lt;/header><br />
-            </code>
+         <h2>navigation styling and HTML</h2>
+         <p>
+            The rendered element is used on the styleguide's main navigation.
+         </p>
+         <div class="flex-grid-twos">
+            <div class="col">
+               <h3>navigation CSS selectors</h3>
+               <ul>
+                  <li>
+                     header
+                  </li>
+                  <li>
+                     .logo
+                  </li>
+                  <li>
+                     .nav-item-links
+                  </li>
+                  <li>
+                     nav-item-links > li
+                  </li>
+                  <li>
+                     .nav-item-links > li > a:not(.logo-background):active,<br />
+                     .nav-item-links > li > a:not(.logo-background):hover,<br />
+                     .nav-item-links > li > a:not(.logo-background):focus
+                  </li>
+                  <li>
+                     .logo-background:hover > .logo,<br />
+                     .logo-background:active > .logo,<br />
+                     .logo-background:focus > .logo
+                  </li>
+                  <li>
+                     .nav-item-links > li a + div
+                  </li>
+                  <li>
+                     .nav-item-links > li:hover a + div
+                  </li>
+                  <li>
+                     .nav-item-links > li a + div > .nav-dropdown
+                  </li>
+                  <li>
+                     .nav-item-links > li a + div > .nav-dropdown > li
+                  </li>
+                  <li>
+                     .nav-item-links > li a + div > .nav-dropdown > li > a
+                  </li>
+                  <li>
+                     .nav-item-links > li a + div > .nav-dropdown > li:hover > a
+                  </li>
+                  <li>
+                     .nav-item-links > li > a
+                  </li>
+                  <li>
+                     .nav-item-links > li > a.logo-background
+                  </li>
+                  <li>
+                     #nav-toggle
+                  </li>
+                  <li>
+                     #nav-toggle:active,<br />
+                     #nav-toggle:hover,<br />
+                     #nav-toggle:focus
+                  </li>
+                  <li>
+                     #nav-items a
+                  </li>
+                  <li>
+                     #nav-toggle.hidden, #nav-items.hidden
+                  </li>
+               </ul>
+            </div>
+            <div class="col">
+               <h3>HTML nav code</h3>
+               <code>
+                  &lt;header id="styleguide"&gt;<br /> &lt;!-- start: menu button taken from Lab 7 --&gt;<br /> &lt;button id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items"&gt;LAMPS MENU&lt;/button&gt;<br /> &lt;!-- end: menu button taken from Lab 7 --&gt;<br /> &lt;nav id="nav-items"&gt;<br /> &lt;ul class="nav-item-links flex-grid-nav"&gt;<br /> &lt;li&gt;<br /> &lt;a href="index.html" class="logo-background"&gt;&lt;h1 class="logo"&gt;Lamps&lt;/h1&gt;&lt;/a&gt;<br /> &lt;/li&gt;<br /> &lt;li&gt;<br /> &lt;a href="#interactive-elements"&gt;&lt;div class="col"&gt;Interactive elements&lt;/div&gt;&lt;/a&gt;<br /> &lt;/li&gt;<br /> &lt;li&gt;<br /> &lt;a href="#text-styling"&gt;&lt;div class="col"&gt;Text styling&lt;/div&gt;&lt;/a&gt;<br /> &lt;/li&gt;<br /> &lt;li&gt;<br /> &lt;a href="#combined-elements"&gt;&lt;div class="col"&gt;Combined Elements&lt;/div&gt;&lt;/a&gt;<br /> &lt;/li&gt;<br /> &lt;/ul&gt;<br /> &lt;/nav&gt;<br /> &lt;/header&gt;
+               </code>
+            </div>
          </div>
       </section>
 
@@ -580,10 +562,10 @@
          </div>
          <h3>HTML multi prod code</h3>
          <code>
-            <p>&lt;section&gt;<br /> &lt;h2&gt;popular items this month&lt;/h2&gt;<br /> &lt;div class="flex-grid-fours"&gt;<br /> &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/bulb1.jpg" srcset="img/bulb1.jpg 2x, img/bulb1.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Hevlo&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lightbulb, Lighting&lt;/span&gt;&lt;br&gt;<br /> $19&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;</p>
-            <p>&lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/lamp11.jpg" srcset="img/lamp11.jpg 2x, img/lamp11.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Aran&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lamp, Lighting&lt;/span&gt;&lt;br&gt;<br /> $375&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;</p>
-            <p><br /> &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/bulb3.jpg" srcset="img/bulb3.jpg 2x, img/bulb3.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Fleura&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lightbulb, Lighting&lt;/span&gt;&lt;br&gt;<br /> $32&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;</p>
-            <p><br /> &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/lamp5.jpg" srcset="img/lamp5.jpg 2x, img/lamp5.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Dequino&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lamp, Lighting&lt;/span&gt;&lt;br&gt;<br /> $59&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;/section&gt;</p>
+            &lt;section&gt;<br /> &lt;h2&gt;popular items this month&lt;/h2&gt;<br /> &lt;div class="flex-grid-fours"&gt;<br /> &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/bulb1.jpg" srcset="img/bulb1.jpg 2x, img/bulb1.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Hevlo&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lightbulb, Lighting&lt;/span&gt;&lt;br&gt;<br /> $19&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;
+            &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/lamp11.jpg" srcset="img/lamp11.jpg 2x, img/lamp11.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Aran&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lamp, Lighting&lt;/span&gt;&lt;br&gt;<br /> $375&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;
+            <br /> &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/bulb3.jpg" srcset="img/bulb3.jpg 2x, img/bulb3.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Fleura&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lightbulb, Lighting&lt;/span&gt;&lt;br&gt;<br /> $32&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;
+            <br /> &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/lamp5.jpg" srcset="img/lamp5.jpg 2x, img/lamp5.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Dequino&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lamp, Lighting&lt;/span&gt;&lt;br&gt;<br /> $59&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;/section&gt;
          </code>
       </section>
 
@@ -766,7 +748,7 @@
             <div class="col">
                <h3>HTML grid code</h3>
                <code>
-                  <p>&lt;div class="col"&gt;<br /> &lt;h3&gt;90% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="flex-grid-row"&gt;<br /> &lt;div class="col-60"&gt;<br /> &lt;h3&gt;60% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col-40"&gt;<br /> &lt;h3&gt;40% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;div class="flex-grid-twos"&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;49% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;49% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;div class="flex-grid-threes"&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;33% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;33% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;33% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;div class="flex-grid-fours"&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;24% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;24% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;24% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;24% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;</p>
+                  &lt;div class="col"&gt;<br /> &lt;h3&gt;90% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="flex-grid-row"&gt;<br /> &lt;div class="col-60"&gt;<br /> &lt;h3&gt;60% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col-40"&gt;<br /> &lt;h3&gt;40% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;div class="flex-grid-twos"&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;49% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;49% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;div class="flex-grid-threes"&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;33% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;33% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;33% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;div class="flex-grid-fours"&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;24% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;24% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;24% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;div class="col"&gt;<br /> &lt;h3&gt;24% width&lt;/h3&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;
                </code>
             </div>
          </div>
