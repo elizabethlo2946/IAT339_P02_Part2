@@ -896,7 +896,7 @@ figcaption {
   background-color: rgba(22, 2, 2, 0.5);
 }
 
-.container:hover .hover-overlay, .container:active .hover-overlay {
+.container:hover .hover-overlay, .container:focus .hover-overlay {
   opacity: 1;
 }
 
@@ -916,14 +916,25 @@ figcaption {
     letter-spacing: 0.1rem;
 }
 
-#overlayProductDescriptionHover.hidden {
+/* #overlayProductDescriptionHover.hidden {
   visibility: hidden;
   display: none;
 }
 #overlayProductDescriptionBlock.hidden {
   visibility: hidden;
   display: none;
+} */
+.hidden {
+  visibility: hidden;
+  display: none;
 }
+
+/* @media (hover: none) {
+  #overlayProductDescriptionHover {
+    visibility: hidden;
+    display: none;
+  }
+} */
 
 /* .button-view a:active, .button-view a:hover, .button-view a:focus {
   color: white;
