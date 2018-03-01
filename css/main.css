@@ -864,13 +864,10 @@ figcaption {
     background-color: rgb(142, 114, 78);
     color: white;
 }
-.quantity-title, .quantity-list {
+.quantity-list {
   min-width: 50%;
   display: inline-block;
   float: left;
-}
-.quantity-title {
-  text-align: left;
 }
 /* .button-view a:active, .button-view a:hover, .button-view a:focus {
   color: white;
