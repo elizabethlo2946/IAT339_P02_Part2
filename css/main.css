@@ -921,3 +921,8 @@ figcaption {
 /* END OF FIGURE STYLING --------------------------------------
 ---------------------------------------------------------
 */
+
+div .product-image-viewer {
+  overflow: auto;
+  height: auto;
+}
