@@ -9,6 +9,9 @@ var navToggle = document.querySelector("#nav-toggle");
 var navItems = document.querySelector("#nav-items");
 var navFirstItem = document.querySelector("#nav-items a");
 
+// var overlayProductDescriptionBlock = document.querySelector("#overlayProductDescriptionBlock");
+// var overlayProductDescriptionHover = document.querySelector("#overlayProductDescriptionHover");
+
 window.addEventListener("resize",
 	function() {
 		width = window.innerWidth;
@@ -21,6 +24,9 @@ window.addEventListener("resize",
 		   navItems.classList.add("hidden");
 		   navItems.setAttribute("aria-hidden", "true");
 		   navItems.setAttribute("aria-labelledby", "nav-toggle");
+
+			 // overlayProductDescriptionHover.classList.remove("hidden");
+			 // overlayProductDescriptionBlock.classList.add("hidden");
 		} else {
 
 			navToggle.classList.add("hidden");
@@ -28,6 +34,8 @@ window.addEventListener("resize",
 			navItems.classList.remove("hidden");
 			navItems.setAttribute("aria-hidden", "false");
 
+			// overlayProductDescriptionHover.classList.add("hidden");
+			// overlayProductDescriptionBlock.classList.remove("hidden");
 		}
 	}
 );
