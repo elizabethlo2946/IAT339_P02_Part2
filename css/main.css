@@ -923,6 +923,9 @@ figcaption {
 */
 
 div .product-image-viewer {
-  overflow: auto;
-  height: auto;
+  overflow: hidden;
+}
+
+div .product-image-viewer img {
+  display: block;
 }
