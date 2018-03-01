@@ -51,15 +51,9 @@
                     <div class="col-60">
                         <section class="myCart-form">
                             <h3>Customer Information</h3>
-<!--
-                            <form method="post" action="#">
-                                <label for="form-name">Name:</label>
-                                <input type="text" id="form-name" placeholder="Jane Doe">
-                            </form>
--->
                             <form method="post" action="#">
                                 <label for="form-email">E-mail:</label>
-                                <input type="text" id="form-name" placeholder="lamps.furniture@lamps.com">
+                                <input type="text" id="form-email" placeholder="lamps.furniture@lamps.com">
                             </form>
                         </section>
                         <section class="myCart-form">
@@ -67,7 +61,10 @@
                             <h4>Billing Address</h4>
                             <form method="post" action="#">
                                 <label for="form-country">Country:</label>
-                                <select name="form-country" data-type="select" title="Country"> Country
+                                <select name="form-country" data-type="select" title="Country" id="form-country">
+                                   <option value="Country">
+                                      Country
+                                   </option>
                                     <option value="Canada">Canada</option>
                                     <option value="USA">USA</option>
                                 </select>
@@ -90,7 +87,7 @@
                             </form>
                             <form method="post" action="#">
                                 <label for="form-city">City:</label>
-                                <select name="form-city" data-type="select" title="City">City
+                                <select name="form-city" data-type="select" title="City" id="form-city">
                                     <option value="City1">City1</option>
                                     <option value="City2">City2</option>
                                 </select>
@@ -104,7 +101,9 @@
                             <h4>Credit card information</h4>
                             <form method="post" action="#">
                                 <label for="form-cardType">Card Type:</label>
-                                <select name="form-cardType" data-type="select" title="CardType">Card Type
+                                <select name="form-cardType" data-type="select" title="CardType" id="form-cardType">
+                                   <option value="cardType">
+                                   Card Type</option>
                                     <option value="visa">Visa</option>
                                     <option value="masterCard">Master Card</option>
                                     <option value="americanExpress">American Express</option>
@@ -123,28 +122,36 @@
                     <div class="col-40">
                         <section class="myCart-summary">
                             <h3>Summary</h3>
-                            <ul>
-                                <div class="flex-grid-twos">
-                                    <div class="col item-name">
-                                        <li>Quavo</li>
-                                        <li>Aran</li>
-                                        <li>Aran</li>
-                                        <p>Total</p>
-                                    </div>
-                                    <div class="col price">
-                                        <li>$319</li>
-                                        <li>$375</li>
-                                        <li>$375</li>
-                                        <div class="price">
-                                        <p>$1069</p>
-                                    </div>
-                                    </div>
-                                </div>
-                            </ul>
+                            <table class="item-name">
+                              <!-- <tr>
+                                 <th>Company</th>
+                                 <th>Contact</th>
+                              </tr> -->
+                              <tr>
+                                 <td>Quavo</td>
+                                 <td class="table-right">$315</td>
+                              </tr>
+                              <tr>
+                                 <td>Aran</td>
+                                 <td class="table-right">$375</td>
+                              </tr>
+                              <tr>
+                                 <td>Aran</td>
+                                 <td class="table-right">$375</td>
+                              </tr>
+                              <tr class="total">
+                                 <td>Total</td>
+                                 <td class="table-right">$1069</td>
+                              </tr>
+                            </table>
                             <div class="flex-grid-twos">
-                                <div class="col"><a class="button-reset" href="#">Reset</a></div>
+                                <div class="col">
+                                   <a class="button-reset" href="#">Reset</a>
+                                </div>
                                 <div class="col-space-between-buttons"></div>
-                                <div class="col"><a class="button-submit" href="rateUs.html">Submit</a></div>
+                                <div class="col">
+                                   <a class="button-submit" href="rateUs.html">Submit</a>
+                                </div>
                             </div>
                         </section>
                     </div>

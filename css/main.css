@@ -70,12 +70,14 @@ h4 {
     text-transform: uppercase;
     font-size: 0.8rem;
     color: #888;
+    font-weight: normal;
 }
 a {
    color: rgb(82, 115, 142);
    }
 section code {
-    background-color: #eee;
+    /* background-color: #eee; */
+    background-color: rgb(255, 235, 229);
     padding: 1rem;
     display: block;
 }
@@ -128,6 +130,14 @@ footer {
     background-color: #eee;
     margin-top: 5rem;
 }
+
+/* for styleguide */
+/* textarea {
+   width: 100%;
+   height: 15rem;
+   padding-left: 1rem;
+   border: 0.01rem solid #ddd;
+} */
 /* END OF GENERAL STYLING --------------------------------------
 ---------------------------------------------------------
 */
@@ -179,7 +189,9 @@ taken from a classmate: Jordan Yep via jordanyep.com */
 
    transition: all ease 0.3s;
 }
-.landing-img-caption a:hover {
+.landing-img-caption a:active,
+.landing-img-caption a:hover,
+.landing-img-caption a:focus {
    /* color: rgb(154, 171, 185); */
    color: rgb(82, 115, 142);
 }
@@ -258,12 +270,18 @@ header {
 .nav-item-links > li a + div {
 /*                dropdown menu: "bulbs"*/
     display: none;
-    position: absolute;
+    /* position: absolute; FOR DESKTOP. See next function*/
+    position: relative;
     width: 100%;
     background-color: #fff;
 /* 				border-radius: 0 0 0.2rem 0.2rem; */
     box-shadow: 0 0.1rem 0.1rem 0 rgba(0,0,0,0.2);
     font-size: 1rem;
+}
+@media (min-width:1071px) {
+   .nav-item-links > li a + div {
+      position: absolute;
+   }
 }
 
     .nav-item-links > li:hover a + div {
@@ -550,23 +568,28 @@ a .responsive-image:hover {
     margin-top: 2rem;
     /* position: fixed; */
 }
-.myCart-summary ul{
-    list-style: none;
-    list-style-type: none;
-    padding: 0;
-    text-transform: uppercase;
-}
-.myCart-summary li {
-    padding: 1.5rem 0;
-    border-bottom: 0.08rem solid rgba(154, 171, 185, 0.5);
-}
 .myCart-summary .item-name {
     text-align: left;
     letter-spacing: 0.1rem;
     font-weight: normal;
 }
-.myCart-summary .price {
-    text-align: right;
+.myCart-summary {
+   width: 100%;
+}
+table {
+   width: 100%;
+   text-transform: uppercase;
+}
+td {
+   padding: 1.5rem 0;
+   border-bottom: 0.08rem solid rgba(154, 171, 185, 0.5);
+}
+.table-right {
+   text-align: right;
+}
+.total {
+   color: rgb(154, 171, 185);
+   font-weight: bold;
 }
 /* END OF MY CART PAGE --------------------------------------
 ---------------------------------------------------------
@@ -697,48 +720,10 @@ a .responsive-image:hover {
 /* TEXT STYLING: this is mostly for the style guide --------------------------------------
 ---------------------------------------------------------
 */
+
+
 .text-styling {
     list-style: none;
-}
-/* .h1-titles {
-    padding: 0.5rem 1rem;
-    color: rgb(154, 171, 185);
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.5rem;
-    border: 0.5rem solid rgb(154, 171, 185);
-    width: 10rem;
-    max-height: 4rem;
-} */
-
-.h2-headings {
-    margin: 0;
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-
-    color: rgb(154, 171, 185);
-    font-size: 1.3rem;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-
-    background-color: white;
-/*    background-color: rgba(22, 143, 224,0.2);*/
-/*    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,.3);*/
-    box-shadow: none;
-/*    border-radius: 0;*/
-/*    border-bottom: 0.1rem solid rgb(22, 143, 224);*/
-}
-.h3-subtitles {
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: bolder;
-    letter-spacing: 0.2rem;
-
-    border-bottom: 0.1rem solid rgb(226, 180, 154);
 }
 .a-in-text {
     margin: 0;
@@ -802,31 +787,39 @@ a .responsive-image:hover {
 
 
 
-/* COLOUR SWATCHES --------------------------------------
+/*
+---------------------------------------------------------
+COLOUR PALETTES: start
 ---------------------------------------------------------
 */
-.blue {
-/*    background-color: rgb(22, 143, 224);*/
+
+#colour-swatch1 {
     background-color: rgb(154, 171, 185);
 }
-.blueHover {
-    background-color: rgb(25, 52, 70);
+#colour-swatch2 {
+   background-color: rgb(25, 52, 70);
 }
-.blue p, .blueHover p {
-    color: white;
+#colour-swatch3 {
+   background-color: rgb(226, 180, 154);
 }
-.coral {
-    background-color: rgb(226, 111, 118);
+#colour-swatch4 {
+   background-color: rgb(183, 164, 154);
 }
-.coralHover {
-    background-color: rgb(183, 164, 154);
+
+.circle {
+    border-radius: 50%;
+    display: inline-block;
+    /* margin-right: 20px; */
+    width: 10rem;
+    height: 10rem;
 }
-.coral p, .coralHover p {
-    color: white;
-}
-/* END OF COLOUR SWATCHES --------------------------------------
+
+/*
+---------------------------------------------------------
+COLOUR PALETTES: end
 ---------------------------------------------------------
 */
+
 
 
 
