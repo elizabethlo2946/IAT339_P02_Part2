@@ -844,7 +844,7 @@ figcaption {
     margin-top: 1.5rem;
     padding: 0.5rem 1rem;
     display: inline-block;
-    width: 50%;
+    min-width: 50%;
 
     color: white;
     text-transform: uppercase;
@@ -864,6 +864,14 @@ figcaption {
     background-color: rgb(142, 114, 78);
     color: white;
 }
+.quantity-title, .quantity-list {
+  min-width: 50%;
+  display: inline-block;
+  float: left;
+}
+.quantity-title {
+  text-align: left;
+}
 /* .button-view a:active, .button-view a:hover, .button-view a:focus {
   color: white;
 } */
@@ -881,7 +889,7 @@ figcaption {
 }
 .brief-description {
     color: #555;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     font-size: 0.7rem;
     letter-spacing: 0.1rem;
 }
@@ -902,6 +910,7 @@ figcaption {
 
 .singleProductShowcaseItem .col-40 .title-of-item {
     font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 .singleProductShowcaseItem .brief-description, .singleProductShowcaseItem .type-of-item, .singleProductShowcaseItem .item-reference {
     font-size: 0.75rem;
@@ -928,4 +937,6 @@ div .product-image-viewer {
 
 div .product-image-viewer img {
   display: block;
+  width: 100%;
+  justify-content: center;
 }
