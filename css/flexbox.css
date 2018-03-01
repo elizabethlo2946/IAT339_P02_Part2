@@ -37,6 +37,15 @@
     padding-left: 10%;
     width: 90%;
 }
+
+.flex-grid-single-product-container {
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
 /*	.nav-item-links {*/
 .flex-grid-nav {
     display: block;
@@ -146,6 +155,11 @@
       flex-grow: 0;
       width: 60%;
    }
+
+   .flex-grid-row .col-60 .thumbnail-scrollbar {
+     width: 10%;
+   }
+   
     .flex-grid-row .col-60 img{
         width: 100%;
     }
