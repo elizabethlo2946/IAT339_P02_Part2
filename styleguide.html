@@ -481,7 +481,7 @@
       <section class="flex-grid-container">
          <h2>multiple item listing (4 column)</h2>
          <section>
-            <h2>popular items this month</h2>
+            <!-- <h2>popular items this month</h2>
             <div class="flex-grid-fours">
                <div class="col">
                   <figure class="multi-prod-item">
@@ -532,6 +532,133 @@
                      </figcaption>
                   </figure>
                </div>
+            </div> -->
+
+            <h2>popular items this month</h2>
+            <div class="flex-grid-fours">
+              <div class="col">
+                <figure class="multi-prod-item">
+                  <div class="container">
+                    <a href="singleProduct.html">
+                      <img src="img/lamp1.jpg" srcset="img/lamp1.jpg 2x, img/lamp1.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image">
+                      <div class="overlayProductDescriptionHover hidden">
+                        <!-- <figcaption> -->
+                          <div class="hover-overlay">
+                            <div class="overlay-text">
+                              <p class="title-of-item">Skilo</p>
+                              <p class="brief-description">Lamp, Lighting</p>
+                              <p>$242</p>
+                            </div>
+                          </div>
+                        <!-- </figcaption> -->
+                      </div>
+                    </a>
+
+                    <div class="overlayProductDescriptionBlock hidden">
+                      <div class="block-descrip-text">
+                        <p class="title-of-item">Skilo</p>
+                        <p class="brief-description">Lamp, Lighting</p>
+                        <p>$242</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <a class="button-view" href="singleProduct.html">view</a>
+                </figure>
+              </div>
+
+              <div class="col">
+                <figure class="multi-prod-item">
+                  <div class="container">
+                    <a href="singleProduct.html">
+                      <img src="img/bulb4.jpg" srcset="img/bulb4.jpg 2x, img/bulb4.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image">
+                      <div class="overlayProductDescriptionHover hidden">
+                        <!-- <figcaption> -->
+                          <div class="hover-overlay">
+                            <div class="overlay-text">
+                              <p class="title-of-item">Bude</p>
+                              <p class="brief-description">Lightbulb, Lighting</p>
+                              <p>$13</p>
+                            </div>
+                          </div>
+                        <!-- </figcaption> -->
+                      </div>
+                    </a>
+
+                    <div class="overlayProductDescriptionBlock hidden">
+                      <div class="block-descrip-text">
+                        <p class="title-of-item">Bude</p>
+                        <p class="brief-description">Lightbulb, Lighting</p>
+                        <p>$13</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <a class="button-view" href="singleProduct.html">view</a>
+                </figure>
+              </div>
+
+              <div class="col">
+                <figure class="multi-prod-item">
+                  <div class="container">
+                    <a href="singleProduct.html">
+                      <img src="img/lamp10.jpg" srcset="img/lamp10.jpg 2x, img/lamp10.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image">
+                      <div class="overlayProductDescriptionHover hidden">
+                        <!-- <figcaption> -->
+                          <div class="hover-overlay">
+                            <div class="overlay-text">
+                              <p class="title-of-item">Fokel</p>
+                              <p class="brief-description">Lamp, Lighting</p>
+                              <p>$33</p>
+                            </div>
+                          </div>
+                        <!-- </figcaption> -->
+                      </div>
+                    </a>
+
+                    <div class="overlayProductDescriptionBlock hidden">
+                      <div class="block-descrip-text">
+                        <p class="title-of-item">Fokel</p>
+                        <p class="brief-description">Lamp, Lighting</p>
+                        <p>$33</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <a class="button-view" href="singleProduct.html">view</a>
+                </figure>
+              </div>
+
+              <div class="col">
+                <figure class="multi-prod-item">
+                  <div class="container">
+                    <a href="singleProduct.html">
+                      <img src="img/lamp11.jpg" srcset="img/lamp11.jpg 2x, img/lamp11.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image">
+                      <div class="overlayProductDescriptionHover hidden">
+                        <!-- <figcaption> -->
+                          <div class="hover-overlay">
+                            <div class="overlay-text">
+                              <p class="title-of-item">Aran</p>
+                              <p class="brief-description">Lamp, Lighting</p>
+                              <p>$375</p>
+                            </div>
+                          </div>
+                        <!-- </figcaption> -->
+                      </div>
+                    </a>
+
+                    <div class="overlayProductDescriptionBlock hidden">
+                      <div class="block-descrip-text">
+                        <p class="title-of-item">Aran</p>
+                        <p class="brief-description">Lamp, Lighting</p>
+                        <p>$375</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <a class="button-view" href="singleProduct.html">view</a>
+                </figure>
+              </div>
             </div>
          </section>
          <div class="flex-grid-twos">
@@ -548,25 +675,48 @@
                      .multi-prod-item
                   </li>
                   <li>
+                    .overlayProductDescriptionBlock
+                  </li>
+                  <li>
+                    .overlayProductDescriptionHover
+                  </li>
+                  <li>
                      .title-of-item
                   </li>
                   <li>
                      .brief-description
                   </li>
                   <li>
-                     figcaption
+                    .block-descrip-text
+                  </li>
+                  <li>
+                     .overlay-text
                   </li>
                </ul>
             </div>
             <div class="col"></div>
          </div>
          <h3>HTML multi prod code</h3>
-         <code>
+         <!-- <code>
             &lt;section&gt;<br /> &lt;h2&gt;popular items this month&lt;/h2&gt;<br /> &lt;div class="flex-grid-fours"&gt;<br /> &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/bulb1.jpg" srcset="img/bulb1.jpg 2x, img/bulb1.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Hevlo&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lightbulb, Lighting&lt;/span&gt;&lt;br&gt;<br /> $19&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;
             &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/lamp11.jpg" srcset="img/lamp11.jpg 2x, img/lamp11.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Aran&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lamp, Lighting&lt;/span&gt;&lt;br&gt;<br /> $375&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;
             <br /> &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/bulb3.jpg" srcset="img/bulb3.jpg 2x, img/bulb3.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Fleura&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lightbulb, Lighting&lt;/span&gt;&lt;br&gt;<br /> $32&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;
             <br /> &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;a href="singleProduct.html"&gt;&lt;img src="img/lamp5.jpg" srcset="img/lamp5.jpg 2x, img/lamp5.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;&lt;/a&gt;<br /> &lt;figcaption&gt;<br /> &lt;span class="title-of-item"&gt;Dequino&lt;/span&gt;&lt;br&gt;<br /> &lt;span class="brief-description"&gt;Lamp, Lighting&lt;/span&gt;&lt;br&gt;<br /> $59&lt;br&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figcaption&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;/section&gt;
-         </code>
+         </code> -->
+         <code>
+            &lt;h2&gt;popular items this month&lt;/h2&gt;<br /> &lt;div class="flex-grid-fours"&gt;<br /> &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;div class="container"&gt;<br /> &lt;a href="singleProduct.html"&gt;<br /> &lt;img src="img/lamp1.jpg" srcset="img/lamp1.jpg 2x, img/lamp1.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;<br /> &lt;div class="overlayProductDescriptionHover hidden"&gt;<br /> &lt;!-- &lt;figcaption&gt; --&gt;<br /> &lt;div class="hover-overlay"&gt;<br /> &lt;div class="overlay-text"&gt;<br /> &lt;p class="title-of-item"&gt;Skilo&lt;/p&gt;<br /> &lt;p class="brief-description"&gt;Lamp, Lighting&lt;/p&gt;<br /> &lt;p&gt;$242&lt;/p&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;!-- &lt;/figcaption&gt; --&gt;<br /> &lt;/div&gt;<br /> &lt;/a&gt;
+            &lt;div class="overlayProductDescriptionBlock hidden"&gt;<br /> &lt;div class="block-descrip-text"&gt;<br /> &lt;p class="title-of-item"&gt;Skilo&lt;/p&gt;<br /> &lt;p class="brief-description"&gt;Lamp, Lighting&lt;/p&gt;<br /> &lt;p&gt;$242&lt;/p&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;
+            &lt;/div&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;
+            &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;div class="container"&gt;<br /> &lt;a href="singleProduct.html"&gt;<br /> &lt;img src="img/bulb4.jpg" srcset="img/bulb4.jpg 2x, img/bulb4.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;<br /> &lt;div class="overlayProductDescriptionHover hidden"&gt;<br /> &lt;!-- &lt;figcaption&gt; --&gt;<br /> &lt;div class="hover-overlay"&gt;<br /> &lt;div class="overlay-text"&gt;<br /> &lt;p class="title-of-item"&gt;Bude&lt;/p&gt;<br /> &lt;p class="brief-description"&gt;Lightbulb, Lighting&lt;/p&gt;<br /> &lt;p&gt;$13&lt;/p&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;!-- &lt;/figcaption&gt; --&gt;<br /> &lt;/div&gt;<br /> &lt;/a&gt;
+            &lt;div class="overlayProductDescriptionBlock hidden"&gt;<br /> &lt;div class="block-descrip-text"&gt;<br /> &lt;p class="title-of-item"&gt;Bude&lt;/p&gt;<br /> &lt;p class="brief-description"&gt;Lightbulb, Lighting&lt;/p&gt;<br /> &lt;p&gt;$13&lt;/p&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;
+            &lt;/div&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;
+            &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;div class="container"&gt;<br /> &lt;a href="singleProduct.html"&gt;<br /> &lt;img src="img/lamp10.jpg" srcset="img/lamp10.jpg 2x, img/lamp10.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;<br /> &lt;div class="overlayProductDescriptionHover hidden"&gt;<br /> &lt;!-- &lt;figcaption&gt; --&gt;<br /> &lt;div class="hover-overlay"&gt;<br /> &lt;div class="overlay-text"&gt;<br /> &lt;p class="title-of-item"&gt;Fokel&lt;/p&gt;<br /> &lt;p class="brief-description"&gt;Lamp, Lighting&lt;/p&gt;<br /> &lt;p&gt;$33&lt;/p&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;!-- &lt;/figcaption&gt; --&gt;<br /> &lt;/div&gt;<br /> &lt;/a&gt;
+            &lt;div class="overlayProductDescriptionBlock hidden"&gt;<br /> &lt;div class="block-descrip-text"&gt;<br /> &lt;p class="title-of-item"&gt;Fokel&lt;/p&gt;<br /> &lt;p class="brief-description"&gt;Lamp, Lighting&lt;/p&gt;<br /> &lt;p&gt;$33&lt;/p&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;
+            &lt;/div&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;
+            &lt;div class="col"&gt;<br /> &lt;figure class="multi-prod-item"&gt;<br /> &lt;div class="container"&gt;<br /> &lt;a href="singleProduct.html"&gt;<br /> &lt;img src="img/lamp11.jpg" srcset="img/lamp11.jpg 2x, img/lamp11.jpg 3x" alt="A casual livingroom set featuring summer colours" class="responsive-image"&gt;<br /> &lt;div class="overlayProductDescriptionHover hidden"&gt;<br /> &lt;!-- &lt;figcaption&gt; --&gt;<br /> &lt;div class="hover-overlay"&gt;<br /> &lt;div class="overlay-text"&gt;<br /> &lt;p class="title-of-item"&gt;Aran&lt;/p&gt;<br /> &lt;p class="brief-description"&gt;Lamp, Lighting&lt;/p&gt;<br /> &lt;p&gt;$375&lt;/p&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;!-- &lt;/figcaption&gt; --&gt;<br /> &lt;/div&gt;<br /> &lt;/a&gt;
+            &lt;div class="overlayProductDescriptionBlock hidden"&gt;<br /> &lt;div class="block-descrip-text"&gt;<br /> &lt;p class="title-of-item"&gt;Aran&lt;/p&gt;<br /> &lt;p class="brief-description"&gt;Lamp, Lighting&lt;/p&gt;<br /> &lt;p&gt;$375&lt;/p&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;
+            &lt;/div&gt;<br /> &lt;a class="button-view" href="singleProduct.html"&gt;view&lt;/a&gt;<br /> &lt;/figure&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;
+          </code>
       </section>
 
 

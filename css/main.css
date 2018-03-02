@@ -933,6 +933,11 @@ figcaption {
   padding: 0em;
 }
 
+.overlay-text p {
+  color: white;
+  margin: 0.5em;
+}
+
 .block-descrip-text p {
   margin: 0em;
   margin-bottom: 0.2em;
