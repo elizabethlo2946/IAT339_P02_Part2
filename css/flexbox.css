@@ -140,7 +140,7 @@
         width: 24%;
     }
     .flex-grid-row {
-        align-items: top;
+        /* align-items: top; */
 /*        align-items: center;*/
     }
     .newSelection {

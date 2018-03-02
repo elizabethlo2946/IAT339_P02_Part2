@@ -278,14 +278,14 @@ header {
     box-shadow: 0 0.1rem 0.1rem 0 rgba(0,0,0,0.2);
     font-size: 1rem;
 }
-@media (min-width:1071px) {
+@media (min-width:66em) {
    .nav-item-links > li a + div {
       position: absolute;
    }
 
 }
 
-@media (min-width:900px) {
+@media (min-width:55em) {
    .overlayProductDescriptionBlock.hidden {
      display: none;
    }
@@ -304,7 +304,7 @@ header {
    } */
 }
 
-@media (max-width:900px) {
+@media (max-width:55em) {
    .overlayProductDescriptionBlock.hidden {
      display: block;
    }
@@ -547,7 +547,7 @@ a .responsive-image:hover {
    flex-wrap: wrap;
    justify-content: center;
    margin: 1rem;
-   align-items: top;
+   /* align-items: top; */
 
    font-size: 0.8rem;
    text-align: left;
@@ -646,7 +646,7 @@ td {
     justify-content: center;
 
     color: white;
-    font-size: 1 rem;
+    /* font-size: 1 rem; */
     font-weight: normal;
     text-transform: uppercase;
     text-decoration: none;
@@ -930,7 +930,14 @@ figcaption {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  padding: 0em;
 }
+
+.block-descrip-text p {
+  margin: 0em;
+  margin-bottom: 0.2em;
+}
+
 .hover-brief-description {
     /* text-transform: lowercase; */
     font-size: 0.7rem;
@@ -1018,7 +1025,8 @@ figcaption {
 */
 
 div .product-image-viewer {
-  overflow: hidden;
+  /* overflow: scroll; */
+  /* height: 400px; */
 }
 
 div .product-image-viewer img {
