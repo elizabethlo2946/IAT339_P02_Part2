@@ -9,36 +9,32 @@ var navToggle = document.querySelector("#nav-toggle");
 var navItems = document.querySelector("#nav-items");
 var navFirstItem = document.querySelector("#nav-items a");
 
-// var overlayProductDescriptionBlock = document.querySelector("#overlayProductDescriptionBlock");
-// var overlayProductDescriptionHover = document.querySelector("#overlayProductDescriptionHover");
+window.onresize = resetNavBarMobile;
+window.onload = resetNavBarMobile;
 
-window.addEventListener("resize",
-	function() {
-		width = window.innerWidth;
-
-		if (width < 1071) {
-			console.log("Window width is less than 1071px, collapsing menu.");
-
-		   navToggle.classList.remove("hidden");
-		   navToggle.setAttribute("aria-hidden", "false");
-		   navItems.classList.add("hidden");
-		   navItems.setAttribute("aria-hidden", "true");
-		   navItems.setAttribute("aria-labelledby", "nav-toggle");
-
-			 // overlayProductDescriptionHover.classList.remove("hidden");
-			 // overlayProductDescriptionBlock.classList.add("hidden");
-		} else {
-
-			navToggle.classList.add("hidden");
-			navToggle.setAttribute("aria-hidden", "true");
-			navItems.classList.remove("hidden");
-			navItems.setAttribute("aria-hidden", "false");
-
-			// overlayProductDescriptionHover.classList.add("hidden");
-			// overlayProductDescriptionBlock.classList.remove("hidden");
-		}
-	}
-);
+// window.addEventListener("resize",
+// 	function() {
+// 		width = window.innerWidth;
+//
+// 		if (width < 1071) {
+// 			console.log("Window width is less than 1071px, collapsing menu.");
+//
+// 		   navToggle.classList.remove("hidden");
+// 		   navToggle.setAttribute("aria-hidden", "false");
+// 		   navItems.classList.add("hidden");
+// 		   navItems.setAttribute("aria-hidden", "true");
+// 		   navItems.setAttribute("aria-labelledby", "nav-toggle");
+//
+// 		} else {
+//
+// 			navToggle.classList.add("hidden");
+// 			navToggle.setAttribute("aria-hidden", "true");
+// 			navItems.classList.remove("hidden");
+// 			navItems.setAttribute("aria-hidden", "false");
+//
+// 		}
+// 	}
+// );
 
 navToggle.addEventListener("click",
    function() {
@@ -59,4 +55,24 @@ navToggle.addEventListener("click",
       }
    }
 );
+
+function resetNavBarMobile() {
+	width = window.innerWidth;
+
+	if (width < 1071) {
+		console.log("Window width is less than 1071px, collapsing menu.");
+
+	   navToggle.classList.remove("hidden");
+	   navToggle.setAttribute("aria-hidden", "false");
+	   navItems.classList.add("hidden");
+	   navItems.setAttribute("aria-hidden", "true");
+	   navItems.setAttribute("aria-labelledby", "nav-toggle");
+	} else {
+
+		navToggle.classList.add("hidden");
+		navToggle.setAttribute("aria-hidden", "true");
+		navItems.classList.remove("hidden");
+		navItems.setAttribute("aria-hidden", "false");
+	}
+}
 // END: taken from IAT339 Week7 Lecture
